@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
@@ -16,89 +15,121 @@ function HomePage() {
             recipes: [
               // Breakfast Recipes
               {
-                "id": 1,
-                "name": "Breakfast Burrito",
-                "image": "https://example.com/breakfast-burrito.jpg",
-                "ingredients": ["2 large eggs", "1/2 cup shredded cheese"],
-                "instructions": "1. Scramble eggs and add cheese...",
-                "category": "Breakfast"
+                id: 1,
+                name: "Waffles",
+                image: "http://surl.li/kzxova",
+                ingredients: ["1 1/2 cups flour", "1 tbsp sugar", "2 tsp baking powder"],
+                instructions: "1. Mix dry ingredients...",
+                category: "Breakfast"
+              },
+              {
+                id: 2,
+                name: "Pancakes – Fluffy, Quick, No-Fail",
+                image: "http://surl.li/fxjlbj",
+                ingredients: ["1 cup flour", "1 tbsp sugar", "1 egg"],
+                instructions: "1. Mix dry ingredients...",
+                category: "Breakfast"
+              },
+              {
+                id: 3,
+                name: "Homemade Pork Sausage Patties",
+                image: "http://surl.li/rbaokm",
+                ingredients: ["500g pork mince", "1 tbsp sage", "1 tsp thyme"],
+                instructions: "1. Mix all ingredients...",
+                category: "Breakfast"
               },
               // Lunch Recipes
               {
-                "id": 2,
-                "name": "Madombi (Dumplings)",
-                "image": "https://www.thespruceeats.com/thmb/V1-lA9Vc1b7jo8zSQtdD0sCoumI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/madombi-dumplings-recipe-5071291-hero-01-f1c69d246588483cbee4d9e0ef38d8f5.jpg",
-                "ingredients": ["3 cups (425 grams) all-purpose flour"],
-                "instructions": "1. Mix flour, baking powder, salt, yeast, and sugar...",
-                "category": "Lunch"
+                id: 4,
+                name: "Cheesy Zucchini and Pasta Slice",
+                image: "http://surl.li/pwnsro",
+                ingredients: ["2 cups cooked pasta", "1 cup grated zucchini"],
+                instructions: "1. Mix ingredients...",
+                category: "Lunch"
               },
               {
-                "id": 3,
-                "name": "Chicken and Pea Curry",
-                "image": "https://www.whatsfordinner.co.za/recipe/poultry/252776-chicken-and-pea-curry/",
-                "ingredients": ["2 tablespoons vegetable oil"],
-                "instructions": "1. Heat oil in a large pot...",
-                "category": "Lunch"
-              },
-              {
-                "id": 4,
-                "name": "Speedy Chicken Curry with Flatbreads and Cucumber Raita",
-                "image": "https://www.whatsfordinner.co.za/recipe/poultry/253065-speedy-chicken-curry-with-flatbreads-and-cucumber-raita/",
-                "ingredients": ["2 tablespoons vegetable oil"],
-                "instructions": "1. Heat oil in a large pan...",
-                "category": "Lunch"
+                id: 5,
+                name: "Spaghetti Bolognese Cups",
+                image: "http://surl.li/wxjbwi",
+                ingredients: ["200g spaghetti", "1 cup Bolognese sauce"],
+                instructions: "1. Cook spaghetti...",
+                category: "Lunch"
               },
               // Dinner/Supper Recipes
               {
-                "id": 5,
-                "name": "Beef Bobotie",
-                "image": "https://www.thespruceeats.com/thmb/StIKrJfCk19Nuxbvrq7zXYGtjZQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/beef-bobotie-recipe-39440-hero-01-1233369c77c849bb8b8367b47b984cf2.jpg",
-                "ingredients": ["2 tablespoons butter", "2 medium onions, finely chopped"],
-                "instructions": "1. Preheat oven to 180°C...",
-                "category": "Dinner/Supper"
+                id: 6,
+                name: "Lamb Chops with Rosemary Gravy (loin chops, forequarter, cutlets)",
+                image: "http://surl.li/qcmkmd",
+                ingredients: ["4 lamb chops", "1 can tomato puree"],
+                instructions: "1. Sear lamb chops...",
+                category: "Dinner/Supper"
               },
               {
-                "id": 6,
-                "name": "Chicken Curry",
-                "image": "https://www.thespruceeats.com/thmb/cMyv1JrrHj6fEA3vv8VMB9PatP4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/durban-chicken-curry-recipe-39451-hero-01-1924bfb1eeaa403c8d26a3bca9f68884.jpg",
-                "ingredients": ["2 tablespoons ghee"],
-                "instructions": "1. Heat ghee and oil in a large pot...",
-                "category": "Dinner/Supper"
+                id: 7,
+                name: "Asparagus and Ham Filo Pie with Salsa Verde",
+                image: "http://surl.li/pqwaxv",
+                ingredients: ["4 sheets filo pastry", "100g ham"],
+                instructions: "1. Preheat oven...",
+                category: "Dinner/Supper"
               },
               {
-                "id": 7,
-                "name": "Everyday Chicken Curry",
-                "image": "https://www.whatsfordinner.co.za/recipe/poultry/252778-everyday-chicken-curry/",
-                "ingredients": ["2 tablespoons vegetable oil"],
-                "instructions": "1. Heat oil in a large pot...",
-                "category": "Dinner/Supper"
+                id: 8,
+                name: "Brown Rice and Salmon Patties",
+                image: "http://surl.li/ivdwjm",
+                ingredients: ["1/2 cup brown rice", "415g can red salmon"],
+                instructions: "1. Cook rice...",
+                category: "Dinner/Supper"
               },
               {
-                "id": 8,
-                "name": "Chicken Karai",
-                "image": "https://www.whatsfordinner.co.za/recipe/poultry/253401-chicken-karai//",
-                "ingredients": ["2 tablespoons vegetable oil"],
-                "instructions": "1. Heat oil in a large pot...",
-                "category": "Dinner/Supper"
+                id: 9,
+                name: "Best-Ever Homemade Sausage Rolls",
+                image: "http://surl.li/bpyjqt",
+                ingredients: ["4 sheets puff pastry", "500g veal mince"],
+                instructions: "1. Preheat oven...",
+                category: "Dinner/Supper"
+              },
+              {
+                id: 10,
+                name: "Italian Lamb Stew",
+                image: "http://surl.li/gcrdws",
+                ingredients: ["600g diced lamb", "1 large zucchini"],
+                instructions: "1. Combine flour and paprika...",
+                category: "Dinner/Supper"
+              },
+              {
+                id: 11,
+                name: "Braised Beef Short Ribs",
+                image: "http://surl.li/mmwurb",
+                ingredients: ["1 kg beef short ribs", "2 cups beef stock"],
+                instructions: "1. Sear the ribs...",
+                category: "Dinner/Supper"
               },
               // Dessert Recipes
               {
-                "id": 9,
-                "name": "Chocolate Lava Cake",
-                "image": "https://example.com/chocolate-lava-cake.jpg",
-                "ingredients": ["1/2 cup unsalted butter", "1 cup chocolate chips"],
-                "instructions": "1. Melt butter and chocolate together...",
-                "category": "Dessert"
+                id: 12,
+                name: "Classic Chewy Brownie",
+                image: "http://surl.li/xfvvpc",
+                ingredients: ["1 cup flour", "1/2 cup cocoa powder"],
+                instructions: "1. Preheat oven...",
+                category: "Dessert"
+              },
+              {
+                id: 13,
+                name: "Easy Banana Cake",
+                image: "http://surl.li/gwqmzs",
+                ingredients: ["2 ripe bananas", "1 cup flour"],
+                instructions: "1. Preheat oven...",
+                category: "Dessert"
               },
               // Sunday Lunch Recipes
               {
-                "id": 10,
-                "name": "Shank and Shin Potjie",
-                "image": "https://www.paarman.co.za/all-recipes/shank-and-shin-potjie/",
-                "ingredients": ["1 kg meaty beef shin"],
-                "instructions": "1. Coat beef and lamb with flour and seasonings...",
-                "category": "Sunday Lunch"
-              }
+                id: 14,
+                name: "Seven Colours Factory",
+                image: "http://surl.li/xvptxe",
+                ingredients: ["2 cups rice", "500g beef stew"],
+                instructions: "1. Cook rice...",
+                category: "Sunday Lunch"
+              },
             ]
           }
         };
