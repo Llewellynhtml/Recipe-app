@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 
 function HomePage() {
   const [recipes, setRecipes] = useState([]);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [newRecipe, setNewRecipe] =useState({name:'', ingredients:'', instructions:'', image:'',});
+  const [editRecipe, setEditRecipe] = useState(null);
+  const [filteredRecipes, setFilteredRecipes] = useState(recipes)
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Mock data instead of fetching from db.json
+      
         const response = {
           data: {
             recipes: [
@@ -143,11 +146,34 @@ function HomePage() {
     fetchData();
   }, []);
 
-  const filteredRecipes = recipes.filter(recipe =>
-    recipe.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-    (selectedCategory ? recipe.category === selectedCategory : true)
-  );
+const handleAddRecipe = () => {
+const newId = recipes.length ?[ recipes.length - 1].id + 1: 1;
+const updatedRecipes = [...recipes, {id: newId, ...newRecipe}];
+setRecipes(updatedRecipes);
+setFilteredRecipes(updatedRecipes)
+setNewRecipe({name:'', ingredients:'', instructions:'', image:'' });
+};
 
+const handleDelete = (id) => {
+const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
+setRecipes(updatedRecipes)
+setFilteredRecipes(updatedRecipes);
+};
+
+const handleupdateRecipe = () => {
+const updatedRecipes = recipes.map(recipe => recipe.id === editRecipe.id ? editRecipe : recipe);
+setRecipes(updatedRecipes);
+setFilteredRecipes(updatedRecipes);
+setEditRecipe(null);
+};
+
+  const handleSearch = () => {
+  const filteredRecipes = recipes.filter(recipe =>
+    recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+    (selectedCategory ? recipe.category === selectedCategory : true)
+  );setFilteredRecipes(recipes)
+  
+};
   return (
     <div className="home-page">
       <h1>Recipe App</h1>
@@ -158,21 +184,80 @@ function HomePage() {
         <button onClick={() => setSelectedCategory('Dinner/Supper')}>Dinner/Supper</button>
         <button onClick={() => setSelectedCategory('Dessert')}>Dessert</button>
         <button onClick={() => setSelectedCategory('Sunday Lunch')}>Sunday Lunch</button>
+        <button onClick={() => setSelectedCategory('Add recipe')}>Add Recipe</button>
       </div>
+      <div className="homepage_search" >
       <input
         type="text"
         placeholder="Search for a recipe..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="search-input"
+        className="homepage_search-input"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}  
       />
+      <button className='homepage_search-button' onClick={handleSearch}>Search</button>
+      </div>
+
+      <div className="homepage__add-recipe">
+        <h2>Add a New Recipe</h2>
+        <input
+          type="text"
+          placeholder="Recipe Name"
+          className="homepage__add-input"
+          value={newRecipe.name}
+          onChange={(e) => setNewRecipe({ ...newRecipe, name: e.target.value })}
+        />
+        <input
+          type="text"
+          placeholder="Ingredients"
+          className="homepage__add-input"
+          value={newRecipe.ingredients}
+          onChange={(e) => setNewRecipe({ ...newRecipe, ingredients: e.target.value })}
+        />
+        <textarea
+          placeholder="Instructions"
+          className="homepage__add-textarea"
+          value={newRecipe.instructions}
+          onChange={(e) => setNewRecipe({ ...newRecipe, instructions: e.target.value })}
+        />
+      </div>
+      <button className="homepage__add-button" onClick={handleAddRecipe}>Add Recipe</button>
+
+
+      {editRecipe && (
+        <div className="homepage__edit-recipe">
+          <h2>Edit Recipe</h2>
+          <input
+            type="text"
+            placeholder="Recipe Name"
+            className="homepage__edit-input"
+            value={editRecipe.name}
+            onChange={(e) => setEditRecipe({ ...editRecipe, name: e.target.value })}
+          />
+          <input
+            type="text"
+            placeholder="Ingredients"
+            className="homepage__edit-input"
+            value={editRecipe.ingredients}
+            onChange={(e) => setEditRecipe({ ...editRecipe, ingredients: e.target.value })}
+          />
+          <textarea
+            placeholder="Instructions"
+            className="homepage__edit-textarea"
+            value={editRecipe.instructions}
+            onChange={(e) => setEditRecipe({ ...editRecipe, instructions: e.target.value })}
+          />
+          <button className="homepage__update-button" onClick={handleupdateRecipe}>Update Recipe</button>
+        </div>
+      )}
+
       <div className="recipe-list">
         {filteredRecipes.map((recipe) => (
           <div key={recipe.id} className="recipe-card">
             <img src={recipe.image} alt={recipe.name} className="recipe-image" />
             <h2>{recipe.name}</h2>
-            <p>{recipe.ingredients.join(', ').slice(0, 100)}...</p>
-            <Link to={`/recipe/${recipe.id}`} className="view-recipe-button">View Recipe</Link>
+            <button className="homepage__delete-button" onClick={() => handleDelete(recipe.id)}>Delete</button>
+            <button className="homepage__edit-button" onClick={() => setEditRecipe(recipe)}>Edit</button>
+            <div><Link to={`/recipe/${recipe.id}`} className="view-recipe-button">View Recipe</Link></div>
           </div>
         ))}
       </div>
