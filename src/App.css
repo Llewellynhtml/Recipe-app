@@ -61,7 +61,7 @@ border-radius: 10px;
 .homepage_search-button {
 padding: 10px 20px;
  font-size: 16px;
- background-color: #28a745;
+ background-color: #23f108;
  color: whitesmoke;
  border: none;
  border-radius: 10px;
@@ -199,7 +199,7 @@ margin-left: 7px;
 }
 
 .category-buttons button:hover {
-  background-color: #45a049;
+  background-color: #23f108;
 }
 
 .search-input {
@@ -243,4 +243,220 @@ margin-left: 7px;
 
 .view-recipe-button:hover {
   background-color: #45a049;
+}
+
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5a623, #f6b93b);
+  color: #fff;
+}
+
+.page-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background: #e3e1de06;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #f68f2e48;
+}
+
+.form-container a {
+  color: #ff9500;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+.register-page .page-container {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.login-page .page-container {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.kitchen {
+ position: relative;
+ top: 10px;
+ left: 10px;
+ width: 280px;
+ height: 250px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #141515;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.navbar a:hover {
+  background-color: #23f108;
+  border-radius: 4px;
+}
+
+.logout-button {
+  background-color: #1f9b23;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #23f108;
+}
+
+
+
+.app-container {
+  margin-top: 60px;
+}
+
+.add-recipe-page {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.add-recipe-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-recipe-page input,
+.add-recipe-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-recipe-page textarea {
+  height: 100px;
+  resize: none;
+}
+
+.add-recipe-page input:focus,
+.add-recipe-page textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+.add-recipe-page button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-recipe-page button:hover {
+  background-color: #218838;
+}
+
+
+.profile-page,
+.edit-profile-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page h1,
+.edit-profile-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-page p,
+.edit-profile-page input {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.edit-profile-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-profile-page button,
+.profile-page button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-profile-page button:hover,
+.profile-page button:hover {
+  background-color: #0056b3;
 }

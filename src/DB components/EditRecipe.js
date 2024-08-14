@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; // useNavigate instead of useHistory
 import axios from 'axios';
-import '../App.css';
+
 
 function EditRecipe() {
   const { id } = useParams();

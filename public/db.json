@@ -1,0 +1,185 @@
+{
+  "recipes": [
+ 
+    {
+      "id": 1,
+      "name": "Waffles",
+      "ingredients": [
+        "Flour",
+        "Baking powder",
+        "Sugar",
+        "Eggs",
+        "Milk",
+        "Butter",
+        "Salt",
+        "Vanilla"
+      ],
+      "img_url": "https://www.recipetineats.com/tachyon/2023/08/Waffles_9.jpg?resize=900%2C1125&zoom=1",
+      "methods": [
+        "Whisk dry ingredients – flour, baking powder, sugar and salt.",
+        "Whisk in wet ingredients – milk, eggs, and vanilla, then add melted butter and whisk until lump free.",
+        "Rest the batter overnight or for at least 2 hours.",
+        "Preheat waffle iron and cook until exterior is golden."
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Pancakes – Fluffy, quick, no-fail",
+      "ingredients": [
+        "2 cups plain flour",
+        "4 tsp baking powder",
+        "1/4 cup white sugar",
+        "Pinch of salt",
+        "1 egg",
+        "1 3/4 cups milk",
+        "1 tsp vanilla extract",
+        "4 tsp butter"
+      ],
+      "img_url": "https://www.recipetineats.com/tachyon/2017/06/Pancakes-SQ.jpg?resize=900%2C900&zoom=1",
+      "methods": [
+        "Whisk flour, baking powder, sugar, and salt together.",
+        "Add egg, milk, and vanilla, and whisk until lump free.",
+        "Heat skillet, add a bit of butter, and pour 1/4 cup batter per pancake.",
+        "Cook until bubbles rise, then flip and cook until golden."
+      ]
+    },
+
+
+    {
+      "id": 3,
+      "name": "Homemade Pork Sausage Patties",
+      "ingredients": [
+        "500g pork mince",
+        "1 tsp dried ground sage",
+        "1/2 tsp dried thyme",
+        "1 tsp onion powder",
+        "1/2 tsp garlic powder",
+        "1 tsp black pepper",
+        "3/4 tsp cooking salt",
+        "2 tbsp olive oil",
+        "Ketchup for serving"
+      ],
+      "img_url": "https://www.recipetineats.com/tachyon/2023/09/Homemade-pork-sausage-patties_2.jpg?resize=900%2C1125&zoom=1",
+      "methods": [
+        "Mix sausage pattie ingredients, form into 8 patties.",
+        "Cook in hot oil for 2 minutes per side until golden.",
+        "Serve with ketchup."
+      ]
+    },
+
+    {
+      "id": 4,
+      "name": "Classic Chewy Brownie Recipe",
+      "ingredients": [
+        "125g unsalted butter",
+        "125g dark chocolate",
+        "3 eggs",
+        "335g white sugar",
+        "115g plain flour",
+        "30g Dutch cocoa powder",
+        "1 tsp vanilla extract",
+        "Pinch of salt"
+      ],
+      "img_url": "https://img.taste.com.au/RodN3Jmh/taste/2024/03/brownie-recipecloseup-196839-1.jpg",
+      "methods": [
+        "Preheat oven to 180C. Grease and line a square cake pan.",
+        "Melt butter and chocolate, then stir in remaining ingredients.",
+        "Pour into pan and bake for 30 minutes."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Easy Banana Cake Recipe",
+      "ingredients": [
+        "1 cup self-raising flour",
+        "1 cup caster sugar",
+        "50g melted butter",
+        "1 egg",
+        "1 tsp vanilla essence",
+        "1/4 cup milk",
+        "1/2 cup mashed banana"
+      ],
+      "img_url": "https://img.taste.com.au/ApQfUW0x/w720-h480-cfill-q80/taste/2014/10/easy-banana-cake-hero-cropped-200106-1.jpg",
+      "methods": [
+        "Preheat oven to 180C. Prepare loaf pan.",
+        "Mix all ingredients, pour into pan, and bake for 30-35 minutes."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sticky Date Pudding",
+      "ingredients": [
+        "250g pitted dates",
+        "1 tsp bicarbonate soda",
+        "1 1/2 cups boiling water",
+        "125g softened butter",
+        "1 cup brown sugar",
+        "1 tsp vanilla extract",
+        "2 eggs",
+        "1 3/4 cups self-raising flour",
+        "1 cup brown sugar (for sauce)",
+        "300ml thickened cream",
+        "1/2 tsp vanilla extract (for sauce)",
+        "60g butter (for sauce)"
+      ],
+      "img_url": "https://img.taste.com.au/6DJiz5-6/taste/2016/11/sticky-date-pudding-image1-197457-1.jpg",
+      "methods": [
+        "Preheat oven to 180C. Prepare cake pan.",
+        "Combine dates and bicarbonate of soda with boiling water, then cool.",
+        "Mix remaining ingredients, bake for 35-40 minutes.",
+        "Prepare sauce and pour over warm pudding."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Seven Colours Factory",
+      "ingredients": [
+        "For the Pap: 1.5L water, 750g maize meal",
+        "For the Beef Stew: 50ml sunflower oil, 1.5kg beef cubes, 200g onions, 10g garlic, 100g Knorr Tomato Pronto, 2L water, 350g potatoes, 100g carrots, 40g Knorr Brown Sauce Gravy Base",
+        "For the Chakalaka: 70ml sunflower oil, 180g onions, 7g garlic, 3g Rajah Medium Curry Powder, 55g green pepper, 220g carrots, 125g cabbage, 125g Knorr Tomato Pronto, 10g Robertsons Veggie Seasoning, 5g Knorr Aromat Original, 220g baked beans, 2g red chillies",
+        "For the Beetroot and Apple Salad: 70g onions, 1kg cooked beetroot, 125g chutney, 325g grated apple",
+        "For the Potato Salad: 250g fried bacon, 1kg boiled pears, 100g red onion, 50g pickled jalapenos, 15g chives, 100g grated cheddar cheese, 200g Hellmann's Tangy Mayonnaise, 200g Hellmann's Creamy Ranch Salad Dressing",
+        "For the Peri-Peri Spinach: 60g margarine, 120g onions, 5g garlic, 20g Knorr Peri-Peri Marinade, 540g Knorr Tomato Pronto, 400g blanched spinach, 500ml fresh cream",
+        "For the Roasted Butternut: 1.5kg butternut, 20g Robertsons Veggie Seasoning, 50g margarine"
+      ],
+      "img_url": "https://www.unileverfoodsolutions.co.za/dam/global-ufs/mcos/SOUTH-AFRICA/calcmenu/recipes/ZA-recipes/other/seven-colours-factory/main-header.jpg",
+      "methods": [
+        "Prepare Pap: Combine maize meal and boiling water, cook over low heat.",
+        "Beef Stew: Brown beef, add onions, garlic, tomato, and water. Simmer and add vegetables and gravy base.",
+        "Chakalaka: Fry onions, garlic, curry powder, add remaining ingredients, and simmer.",
+        "Beetroot and Apple Salad: Combine all ingredients.",
+        "Potato Salad: Mix all ingredients.",
+        "Peri-Peri Spinach: Sauté onions, add spices, tomato sauce, spinach, and cream.",
+        "Roasted Butternut: Roast butternut with seasoning and margarine."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Braised Beef Short Ribs",
+      "ingredients": [
+        "1 kg beef short ribs",
+        "2 tbsp Seven Colours Grill Seasoning",
+        "2 tbsp flour",
+        "2 tbsp oil",
+        "1 onion, diced",
+        "1 large carrot, sliced",
+        "1 tsp garlic, crushed",
+        "1 tbsp tomato paste",
+        "1 cup dry red wine",
+        "300g baby potatoes",
+        "1 tsp fresh thyme",
+        "2 cups beef stock"
+      ],
+      "img_url": "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/451636811_814419510789330_3650653938940278340_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=RAeqLd-GeKgQ7kNvgH1vUpT&_nc_ht=scontent-jnb2-1.xx&oh=00_AYDz_33qXPSabb0jj41CzZtHW3gSooLaNhrlBd0JIremRg&oe=66B913E3",
+      "methods": [
+        "Preheat oven to 180C.",
+        "Season and flour ribs, brown in oil.",
+        "Sauté onions, carrots, and garlic, add tomato paste and wine.",
+        "Add meat back in, potatoes, thyme, and beef stock.",
+        "Cover and cook for 2.5 hours."
+      ]
+    }
+  ]
+}
+
