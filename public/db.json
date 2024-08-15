@@ -3,52 +3,78 @@
  
     {
       "id": 1,
-      "name": "Waffles",
       "ingredients": [
-        "Flour",
-        "Baking powder",
-        "Sugar",
-        "Eggs",
-        "Milk",
-        "Butter",
-        "Salt",
-        "Vanilla"
+        "2 1/4 cup flour, plain / all purpose",
+        "2 1/2 tbsp caster sugar / superfine sugar (sub granulated / ordinary sugar)",
+        "Pinch cooking / kosher salt",
+        "4 tsp baking powder (if yours is old, check it's still good)",
+        "1 1/3 cup milk, full fat, slightly warmed (not piping hot)",
+        "1/2 tsp vanilla essence",
+        "4 large eggs, at room temperature",
+        "150g / 11 tbsp unsalted butter, melted and slightly cooled (not piping hot)"
       ],
-      "img_url": "https://www.recipetineats.com/tachyon/2023/08/Waffles_9.jpg?resize=900%2C1125&zoom=1",
-      "methods": [
-        "Whisk dry ingredients – flour, baking powder, sugar and salt.",
-        "Whisk in wet ingredients – milk, eggs, and vanilla, then add melted butter and whisk until lump free.",
-        "Rest the batter overnight or for at least 2 hours.",
-        "Preheat waffle iron and cook until exterior is golden."
-      ]
+    
+      "instructions": [
+        "Whisk dry – Place the flour, sugar, baking powder, and salt in a large mixing bowl. Whisk to mix.",
+        "Whisk in wet – Add milk, eggs, and vanilla. Whisk to combine. Add melted butter then whisk until lump-free. The batter should be pourable but thick – slightly thinner than pancakes.",
+        "Recommended resting – Cover then refrigerate overnight, or for at least 2 hours. Softer insides, better flavor. Else, proceed immediately with cooking.",
+        "Preheat a waffle maker. A non-stick one will not need oil, plus there is butter in the batter.",
+        "Cooking – Use a ladle to pour batter in to just cover the iron. Don't get greedy – it will leak out the sides! Cook until golden and crisp – my good waffle iron takes 3 1/2 minutes, my Kmart one takes 6 minutes.",
+        "Serving – Transfer onto plates and serve as you go, with desired toppings. Or, put on a rack and keep warm in a preheated 70°C/150°F oven while you continue cooking!"
+      ],
+  "nutrition": {
+    "calories": "268cal (13%)",
+    "carbohydrates": "27g (9%)",
+    "protein": "6g (12%)",
+    "fat": "15g (23%)",
+    "saturatedFat": "9g (56%)",
+    "polyunsaturatedFat": "1g",
+    "monounsaturatedFat": "4g",
+    "transFat": "0.5g",
+    "cholesterol": "102mg (34%)",
+    "sodium": "41mg (2%)",
+    "potassium": "269mg (8%)",
+    "fiber": "1g (4%)",
+    "sugar": "5g (6%)",
+    "vitaminA": "523IU (10%)",
+    "calcium": "127mg (13%)",
+    "iron": "2mg (11%)"
+  }
     },
 
     {
       "id": 2,
-      "name": "Pancakes – Fluffy, quick, no-fail",
       "ingredients": [
-        "2 cups plain flour",
-        "4 tsp baking powder",
-        "1/4 cup white sugar",
+        "2 cups / 300g plain / all purpose flour (Note 1)",
+        "4 tsp baking powder (Note 1)",
+        "1/4 cup / 55g white sugar (caster / super fine is best but not essential)",
         "Pinch of salt",
         "1 egg",
-        "1 3/4 cups milk",
-        "1 tsp vanilla extract",
-        "4 tsp butter"
+        "1 3/4 cups / 435 ml cups milk (any type, any fat %)",
+        "1 tsp vanilla extract or essence",
+        "4 tsp butter , for cooking"
       ],
-      "img_url": "https://www.recipetineats.com/tachyon/2017/06/Pancakes-SQ.jpg?resize=900%2C900&zoom=1",
-      "methods": [
-        "Whisk flour, baking powder, sugar, and salt together.",
-        "Add egg, milk, and vanilla, and whisk until lump free.",
-        "Heat skillet, add a bit of butter, and pour 1/4 cup batter per pancake.",
-        "Cook until bubbles rise, then flip and cook until golden."
-      ]
+      "instructions": [
+        "Place flour, baking powder, sugar and salt in a bowl, whisk to combine.",
+        "Add egg, milk and vanilla. Whisk until lump free - no longer than 30 seconds.",
+        "Heat a non stick skillet - use medium heat if you have a strong stove, medium high if you have a weak one. Add a tiny bit of butter (about 1/2 tsp) and swirl to melt. Use paper towel to mostly wipe the butter off (this is the trick to avoid a dodgy 1st pancake).",
+        "Pour 1/4 cup batter into the middle of the fry pan (I use a slightly heaped ice cream scoop with lever, standard is 1/4 cup).",
+        "Swirl pan lightly to spread or use the ice cream scoop edge to spread into 11cm / 4.5\" circle (ruler is a must) (joking!).",
+        "When bubbles rise to the surface (see video), flip and cook the other side until golden.",
+        "Remove and keep warm in a low oven.",
+        "Use more butter every 2 to 3 pancakes - depends how good your non stick coating is.",
+        "Serve with toppings of choice!"
+      ],
+
+      "nutrition": {
+        "Serving": "62g",
+        "Calories": "108cal (5%)"
+      }
     },
 
 
     {
       "id": 3,
-      "name": "Homemade Pork Sausage Patties",
       "ingredients": [
         "500g pork mince",
         "1 tsp dried ground sage",
@@ -60,8 +86,7 @@
         "2 tbsp olive oil",
         "Ketchup for serving"
       ],
-      "img_url": "https://www.recipetineats.com/tachyon/2023/09/Homemade-pork-sausage-patties_2.jpg?resize=900%2C1125&zoom=1",
-      "methods": [
+      "instructions": [
         "Mix sausage pattie ingredients, form into 8 patties.",
         "Cook in hot oil for 2 minutes per side until golden.",
         "Serve with ketchup."
@@ -70,7 +95,7 @@
 
     {
       "id": 4,
-      "name": "Classic Chewy Brownie Recipe",
+  
       "ingredients": [
         "125g unsalted butter",
         "125g dark chocolate",
@@ -81,8 +106,7 @@
         "1 tsp vanilla extract",
         "Pinch of salt"
       ],
-      "img_url": "https://img.taste.com.au/RodN3Jmh/taste/2024/03/brownie-recipecloseup-196839-1.jpg",
-      "methods": [
+      "instructions": [
         "Preheat oven to 180C. Grease and line a square cake pan.",
         "Melt butter and chocolate, then stir in remaining ingredients.",
         "Pour into pan and bake for 30 minutes."
@@ -101,7 +125,7 @@
         "1/2 cup mashed banana"
       ],
       "img_url": "https://img.taste.com.au/ApQfUW0x/w720-h480-cfill-q80/taste/2014/10/easy-banana-cake-hero-cropped-200106-1.jpg",
-      "methods": [
+      "instructions": [
         "Preheat oven to 180C. Prepare loaf pan.",
         "Mix all ingredients, pour into pan, and bake for 30-35 minutes."
       ]
@@ -124,7 +148,7 @@
         "60g butter (for sauce)"
       ],
       "img_url": "https://img.taste.com.au/6DJiz5-6/taste/2016/11/sticky-date-pudding-image1-197457-1.jpg",
-      "methods": [
+      "instructions": [
         "Preheat oven to 180C. Prepare cake pan.",
         "Combine dates and bicarbonate of soda with boiling water, then cool.",
         "Mix remaining ingredients, bake for 35-40 minutes.",
@@ -144,7 +168,7 @@
         "For the Roasted Butternut: 1.5kg butternut, 20g Robertsons Veggie Seasoning, 50g margarine"
       ],
       "img_url": "https://www.unileverfoodsolutions.co.za/dam/global-ufs/mcos/SOUTH-AFRICA/calcmenu/recipes/ZA-recipes/other/seven-colours-factory/main-header.jpg",
-      "methods": [
+      "instructions": [
         "Prepare Pap: Combine maize meal and boiling water, cook over low heat.",
         "Beef Stew: Brown beef, add onions, garlic, tomato, and water. Simmer and add vegetables and gravy base.",
         "Chakalaka: Fry onions, garlic, curry powder, add remaining ingredients, and simmer.",
@@ -172,14 +196,165 @@
         "2 cups beef stock"
       ],
       "img_url": "https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/451636811_814419510789330_3650653938940278340_n.jpg?stp=dst-jpg_s600x600&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=RAeqLd-GeKgQ7kNvgH1vUpT&_nc_ht=scontent-jnb2-1.xx&oh=00_AYDz_33qXPSabb0jj41CzZtHW3gSooLaNhrlBd0JIremRg&oe=66B913E3",
-      "methods": [
+      "instructions": [
         "Preheat oven to 180C.",
         "Season and flour ribs, brown in oil.",
         "Sauté onions, carrots, and garlic, add tomato paste and wine.",
         "Add meat back in, potatoes, thyme, and beef stock.",
         "Cover and cook for 2.5 hours."
       ]
+    },
+  
+    {
+      "recipes": [
+        {
+          "id": 9,
+          "name": "Cheesy Zucchini and Pasta Slice",
+          "image": "https://shorturl.at/KewVJ",
+          "ingredients": [
+            "1 cup dried wholemeal spiral pasta",
+            "3 medium (500g) zucchini, grated",
+            "3 green onions, thinly sliced",
+            "125g sliced leg ham, sliced",
+            "1 cup pizza cheese",
+            "2 x 125g cans corn kernels, drained",
+            "3/4 cup self-raising flour",
+            "4 eggs, lightly beaten",
+            "1/3 cup vegetable oil",
+            "1/3 cup milk"
+          ],
+          "instructions": [
+            "Preheat oven to 180°C/160°C fan-forced. Grease a 20cm x 30cm lamington pan. Line base and sides with baking paper, extending paper 2cm above edge on both sides.",
+            "Cook pasta in a large saucepan of boiling, salted water following packet directions until tender. Drain. Rinse under cold water. Drain.",
+            "Using hands, squeeze excess liquid from zucchini. Combine pasta, zucchini, onion, ham, cheese, corn and flour in a bowl. Add egg, oil and milk. Season with salt and pepper. Mix well to combine. Spread mixture into prepared pan. Bake for 25 minutes or until golden and just set. Stand for 15 minutes. Serve."
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Spaghetti Bolognese Cups",
+          "image": "https://shorturl.at/lNfAw",
+          "ingredients": [
+            "150g spaghetti",
+            "1 tbsp extra virgin olive oil",
+            "1 brown onion, finely chopped",
+            "600g beef mince",
+            "2 garlic cloves, crushed",
+            "410g can tomato purée",
+            "2 eggs, lightly beaten",
+            "1/3 cup plain flour",
+            "1 cup grated pizza cheese",
+            "1/2 cup roughly chopped fresh basil leaves",
+            "1/4 cup roughly chopped fresh flat-leaf parsley"
+          ],
+          "instructions": [
+            "Cook spaghetti following packet directions until tender.",
+            "Meanwhile, heat oil in a large frying pan over medium-high heat. Add onion. Cook, stirring, for 3 minutes or until just softened. Add mince. Cook, stirring with a wooden spoon to break up lumps, for 5 to 6 minutes or until browned. Add garlic and cook for 1 minute. Add tomato purée. Simmer for 10 minutes until thickened.",
+            "Preheat oven to 180C/160C fan-forced. Grease 18 holes of two muffin pans.",
+            "Mix mince mixture with spaghetti, eggs, flour, half the cheese, basil, and parsley. Season with salt and pepper. Divide mixture into muffin pans, compacting it. Sprinkle with remaining cheese.",
+            "Bake for 20 minutes or until cheese is golden."
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Lamb Chops with Rosemary Gravy",
+          "image": "https://shorturl.at/5rz6M",
+          "ingredients": [
+            "750g/1.5lb lamb chops (loin chops, forequarter, cutlets)",
+            "1/4 cup extra virgin olive oil",
+            "3 garlic cloves, finely minced",
+            "1 tbsp rosemary leaves, finely chopped",
+            "1 tsp each salt and pepper",
+            "2 cups beef stock, low sodium",
+            "3 tbsp flour",
+            "1 tbsp rosemary leaves, finely chopped",
+            "2 rosemary sprigs"
+          ],
+          "instructions": [
+            "Mix Marinade ingredients and marinate lamb for at least 1 hour.",
+            "Heat a large skillet over high heat. Cook lamb chops 4 minutes per side for medium rare. Remove from skillet and rest.",
+            "For the gravy, add flour to the skillet and cook for 30 seconds. Gradually add beef stock, stirring until thickened. Add rosemary and simmer."
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Asparagus and Ham Filo Pie with Salsa Verde",
+          "image": "https://shorturl.at/oAfDS",
+          "ingredients": [
+            "Olive oil cooking spray",
+            "4 sheets filo pastry",
+            "7 eggs",
+            "2/3 cup milk",
+            "100g lean leg ham, chopped",
+            "125g cherry tomatoes, halved",
+            "1 bunch asparagus, trimmed, halved",
+            "30g baby spinach",
+            "1/4 cup frozen peas",
+            "1/3 cup fresh ricotta, roughly crumbled",
+            "1/3 cup fresh basil leaves, chopped",
+            "2 tbsp fresh mint leaves, chopped",
+            "2 tbsp extra virgin olive oil",
+            "1 tbsp lemon juice",
+            "1/2 small garlic clove, crushed"
+          ],
+          "instructions": [
+            "Preheat oven to 200C/180C fan-forced. Layer filo pastry in a slice pan.",
+            "Whisk eggs and milk. Arrange ham, tomatoes, asparagus, spinach, peas, and ricotta in pan. Pour over egg mixture. Bake for 25-30 minutes.",
+            "For salsa verde, mix basil, mint, olive oil, lemon juice, and garlic."
+          ]
+        },
+        {
+          "id": 13,
+          "name": "Brown Rice and Salmon Patties",
+          "image": "https://rb.gy/exh7is",
+          "ingredients": [
+            "1/2 cup medium grain brown rice",
+            "2 1/2 tbsp olive oil",
+            "3 spring onions, finely chopped",
+            "2 garlic cloves, crushed",
+            "415g can red salmon, drained",
+            "2 tbsp finely chopped fresh coriander leaves",
+            "1/2 cup low-fat grated cheddar",
+            "125g green beans, thinly sliced",
+            "2 tbsp wholemeal plain flour",
+            "1 egg, lightly beaten",
+            "1 tbsp kecap manis",
+            "1/2 cup plain low-fat Greek-style yoghurt",
+            "1 tbsp sweet chilli sauce"
+          ],
+          "instructions": [
+            "Cook rice. Cool.",
+            "Sauté onion and garlic. Add to rice with salmon, coriander, cheese, beans, flour, egg, and kecap manis.",
+            "Form patties. Chill.",
+            "Cook patties for 2 minutes each side until golden. Serve with vegetables and yoghurt dipping sauce."
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Best-Ever Homemade Sausage Rolls",
+          "image": "https://rb.gy/z43659",
+          "ingredients": [
+            "4 sheets ready rolled puff pastry",
+            "1 tbsp milk",
+            "1 egg",
+            "500g veal mince (or beef mince)",
+            "500g sausage mince",
+            "1 small brown onion, finely chopped",
+            "1 small red onion, finely chopped",
+            "1 medium carrot, coarsely grated",
+            "3 garlic cloves, crushed",
+            "1/4 cup finely chopped fresh flat-leaf parsley",
+            "1 1/2 tbsp tomato sauce",
+            "1/4 cup worcestershire sauce"
+          ],
+          "instructions": [
+            "Preheat oven to 220C. Thaw pastry. Mix meat filling.",
+            "Shape filling into sausage shapes and roll in pastry.",
+            "Cut and bake rolls for 25-30 minutes until golden."
+          ]
+        }
+      ]
     }
+  
   ]
 }
 

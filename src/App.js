@@ -14,8 +14,8 @@ import './App.css';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [user, setUser] = useState({
-    username: 'JohnDoe',
-    email: 'johndoe@example.com'
+    username: 'Lesego',
+    email: 'Llewellyn.ml.info@gmail.com',
   });
 
   const handleLogout = () => {

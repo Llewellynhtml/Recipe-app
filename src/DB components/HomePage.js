@@ -21,24 +21,18 @@ function HomePage() {
                 id: 1,
                 name: "Waffles",
                 image: "http://surl.li/kzxova",
-                ingredients: ["1 1/2 cups flour", "1 tbsp sugar", "2 tsp baking powder"],
-                instructions: "1. Mix dry ingredients...",
                 category: "Breakfast"
               },
               {
                 id: 2,
-                name: "Pancakes – Fluffy, Quick, No-Fail",
+                name: "Pancakes Fluffy, Quick, No-Fail",
                 image: "http://surl.li/fxjlbj",
-                ingredients: ["1 cup flour", "1 tbsp sugar", "1 egg"],
-                instructions: "1. Mix dry ingredients...",
                 category: "Breakfast"
               },
               {
                 id: 3,
                 name: "Homemade Pork Sausage Patties",
                 image: "http://surl.li/rbaokm",
-                ingredients: ["500g pork mince", "1 tbsp sage", "1 tsp thyme"],
-                instructions: "1. Mix all ingredients...",
                 category: "Breakfast"
               },
               // Lunch Recipes
@@ -124,9 +118,17 @@ function HomePage() {
                 instructions: "1. Preheat oven...",
                 category: "Dessert"
               },
+              {
+               id: 14,
+               name:" Sticky Date Pudding",
+               image: "https://shorturl.at/qW8kX",
+               ingredients: ["280g / 9 oz pitted dates" ],
+               instructions: "1. Preheat oven...",
+               category: "Desert"
+              },
               // Sunday Lunch Recipes
               {
-                id: 14,
+                id: 15,
                 name: "Seven Colours Factory",
                 image: "http://surl.li/xvptxe",
                 ingredients: ["2 cups rice", "500g beef stew"],
@@ -145,7 +147,6 @@ function HomePage() {
 
     fetchData();
   }, []);
-
 
   const handleDelete = (id) => {
     const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
@@ -182,6 +183,7 @@ function HomePage() {
         <button onClick={() => setSelectedCategory('Dessert')}>Dessert</button>
         <button onClick={() => setSelectedCategory('Sunday Lunch')}>Sunday Lunch</button>
       </div>
+      
       <div className="homepage_search">
         <input
           type="text"
@@ -193,18 +195,21 @@ function HomePage() {
         <button className='homepage_search-button' onClick={handleSearch}>Search</button>
       </div>
 
-      <div className="recipe-list">
-        {filteredRecipes.map((recipe) => (
-          <div key={recipe.id} className="recipe-card">
-            <img src={recipe.image} alt={recipe.name} className="recipe-image" />
-            <h2>{recipe.name}</h2>
-            <button className="homepage__delete-button" onClick={() => handleDelete(recipe.id)}>Delete</button>
-            <button className="homepage__edit-button" onClick={() => setEditRecipe(recipe)}>Update</button>
-            <div><Link to={`/recipes/${recipe.id}`} className="view-recipe-button">Display Recipe</Link></div>
-
-          </div>
-        ))}
-      </div>
+      {filteredRecipes.length === 0 ? (
+        <p>No recipes found</p>
+      ) : (
+        <div className="recipe-list">
+          {filteredRecipes.map((recipe) => (
+            <div key={recipe.id} className="recipe-card">
+              <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+              <h2>{recipe.name}</h2>
+              <button className="homepage__delete-button" onClick={() => handleDelete(recipe.id)}>Delete</button>
+              <button className="homepage__edit-button" onClick={() => setEditRecipe(recipe)}>Update</button>
+              <div><Link to={`/recipes/${recipe.id}`} className="view-recipe-button">Display Recipe</Link></div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

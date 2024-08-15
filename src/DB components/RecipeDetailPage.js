@@ -3,34 +3,34 @@ import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 
 function RecipeDetailPage() {
-  const { id } = useParams();  // Extract the recipe ID from the URL
-  const [recipe, setRecipe] = useState(null);  // State to hold the recipe data
-  const [loading, setLoading] = useState(true);  // State to handle loading status
-  const [error, setError] = useState(null);  // State to handle errors
+  const { id } = useParams();  
+  const [recipe, setRecipe] = useState(null);  
+  const [loading, setLoading] = useState(true);  
+  const [error, setError] = useState(null);  
 
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get('./db.json');  // Fetch the recipes from db.json
+        const response = await axios.get('/db.json');
         const foundRecipe = response.data.recipes.find(recipe => recipe.id === parseInt(id));
         if (foundRecipe) {
-          setRecipe(foundRecipe);  // Set the found recipe to the state
+          setRecipe(foundRecipe); 
         } else {
-          setError('Recipe not found');  // Handle case where recipe is not found
+          setError('Recipe not found'); 
         }
       } catch (error) {
-        setError('Error fetching recipe');  // Handle fetch error
+        setError('Error fetching recipe');  
         console.error('Error fetching recipe:', error);
       } finally {
-        setLoading(false);  // Stop loading regardless of success or failure
+        setLoading(false);  
       }
     };
 
     fetchRecipe();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;  // Loading state while fetching data
-  if (error) return <div>{error}</div>;  // Display error if any
+  if (loading) return <div>Loading...</div>; 
+  if (error) return <div>{error}</div>;  
 
   return (
     <div className="recipe-detail">

@@ -8,7 +8,8 @@ function EditRecipe() {
   const [recipe, setRecipe] = useState({
     name: '',
     ingredients: '',
-    instructions: ''
+    instructions: '',
+    nutrition:'',
   });
   const navigate = useNavigate(); // useNavigate instead of useHistory
 
@@ -72,6 +73,15 @@ function EditRecipe() {
             onChange={handleChange}
             required
           />
+        </div>
+        <div className="form-group">
+        <label>nutrition</label>
+         <textarea
+         name="nutrition"
+         value={recipe.nutrition}
+         onChange={handleChange}
+         required
+         />
         </div>
         <button type="submit" className="btn">Update Recipe</button>
       </form>
