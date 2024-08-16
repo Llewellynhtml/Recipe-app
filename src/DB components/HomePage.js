@@ -96,7 +96,7 @@ function HomePage() {
               {
                 id: 11,
                 name: "Braised Beef Short Ribs",
-                image: "http://surl.li/mmwurb",
+                image: "https://shorturl.at/my3oq",
                 ingredients: ["1 kg beef short ribs", "2 cups beef stock"],
                 instructions: "1. Sear the ribs...",
                 category: "Dinner/Supper"
@@ -203,8 +203,7 @@ function HomePage() {
             <div key={recipe.id} className="recipe-card">
               <img src={recipe.image} alt={recipe.name} className="recipe-image" />
               <h2>{recipe.name}</h2>
-              <button className="homepage__delete-button" onClick={() => handleDelete(recipe.id)}>Delete</button>
-              <button className="homepage__edit-button" onClick={() => setEditRecipe(recipe)}>Update</button>
+            
               <div><Link to={`/recipes/${recipe.id}`} className="view-recipe-button">Display Recipe</Link></div>
             </div>
           ))}
