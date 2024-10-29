@@ -1,0 +1,113 @@
+/* HomePage.css */
+
+/* General styles for the home page */
+.home-page {
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .category-buttons button {
+    background-color: #87cefa; /* Light blue background for category buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #5bc0de; /* Darker blue on hover */
+  }
+  
+  .homepage_search {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .homepage_search-input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border for the search input */
+    border-radius: 5px;
+    width: 300px; /* Set a width for the input */
+    margin-right: 10px; /* Space between input and button */
+  }
+  
+  .homepage_search-button {
+    background-color: #87cefa; /* Light blue background for search button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homepage_search-button:hover {
+    background-color: #5bc0de; /* Darker blue on hover */
+  }
+  
+  .recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between recipe cards */
+    width: 100%;
+    max-width: 1200px; /* Maximum width for recipe list */
+    margin: 0 auto; /* Center the grid within the page */
+  }
+  
+  .recipe-card {
+    background-color: white; /* White background for recipe cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(173, 216, 230, 0.5); /* Light blue shadow */
+    overflow: hidden; /* Clip the image at the border */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .recipe-image {
+    width: 100%; /* Make the image fill the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em; /* Font size for recipe name */
+    color: #333; /* Dark text color */
+  }
+  
+  .view-recipe-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #5bc0de; /* Button color for recipe link */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 80%; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-recipe-button:hover {
+    background-color: #4fa3c2; 
+  }
+  
+  p {
+    text-align: center; /* Center text for no recipes found message */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #666; /* Grey text color */
+  }
+  

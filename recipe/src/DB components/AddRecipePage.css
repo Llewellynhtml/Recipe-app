@@ -1,0 +1,52 @@
+.add-recipe-page {
+    max-width: 600px; /* Limits the width of the page for better readability */
+    margin: 50px auto; /* Centers the page horizontally and adds top margin */
+    padding: 20px; /* Adds space inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .add-recipe-page h1 {
+    text-align: center; /* Centers the header text */
+    margin-bottom: 20px; /* Space below the header */
+    color: #333; /* Darker text color for contrast */
+  }
+  
+  .add-recipe-page input,
+  .add-recipe-page textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Adds space inside the inputs */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Increases font size for better readability */
+  }
+  
+  .add-recipe-page textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    min-height: 100px; /* Minimum height for the textarea */
+  }
+  
+  .add-recipe-page input:focus,
+  .add-recipe-page textarea:focus {
+    border-color: #66afe9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .add-recipe-page button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Space inside the button */
+    background-color: #28a745; /* Green background color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Larger font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .add-recipe-page button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

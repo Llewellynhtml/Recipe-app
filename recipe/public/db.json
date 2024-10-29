@@ -1,0 +1,489 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Waffles",
+      "image": "https://shorturl.at/r4Tmi",
+      "ingredients": [
+        "2 1/4 cup flour, plain / all purpose",
+        "2 1/2 tbsp caster sugar / superfine sugar (sub granulated / ordinary sugar)",
+        "Pinch cooking / kosher salt",
+        "4 tsp baking powder (if yours is old, check it's still good)",
+        "1 1/3 cup milk, full fat, slightly warmed (not piping hot)",
+        "1/2 tsp vanilla essence",
+        "4 large eggs, at room temperature",
+        "150g / 11 tbsp unsalted butter, melted and slightly cooled (not piping hot)"
+      ],
+      "instructions": [
+        "Whisk dry – Place the flour, sugar, baking powder, and salt in a large mixing bowl. Whisk to mix.",
+        "Whisk in wet – Add milk, eggs, and vanilla. Whisk to combine. Add melted butter then whisk until lump-free. The batter should be pourable but thick – slightly thinner than pancakes.",
+        "Recommended resting – Cover then refrigerate overnight, or for at least 2 hours. Softer insides, better flavor. Else, proceed immediately with cooking.",
+        "Preheat a waffle maker. A non-stick one will not need oil, plus there is butter in the batter.",
+        "Cooking – Use a ladle to pour batter in to just cover the iron. Don't get greedy – it will leak out the sides! Cook until golden and crisp – my good waffle iron takes 3 1/2 minutes, my Kmart one takes 6 minutes.",
+        "Serving – Transfer onto plates and serve as you go, with desired toppings. Or, put on a rack and keep warm in a preheated 70°C/150°F oven while you continue cooking!"
+      ],
+      "nutrition": {
+        "calories": "268cal (13%)",
+        "carbohydrates": "27g (9%)",
+        "protein": "6g (12%)",
+        "fat": "15g (23%)",
+        "saturatedFat": "9g (56%)",
+        "polyunsaturatedFat": "1g",
+        "monounsaturatedFat": "4g",
+        "transFat": "0.5g",
+        "cholesterol": "102mg (34%)",
+        "sodium": "41mg (2%)",
+        "potassium": "269mg (8%)",
+        "fiber": "1g (4%)",
+        "sugar": "5g (6%)",
+        "vitaminA": "523IU (10%)",
+        "calcium": "127mg (13%)",
+        "iron": "2mg (11%)"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Pancakes Fluffy, Quick, No-Fail",
+      "image": "https://shorturl.at/tM0kg",
+      "ingredients": [
+        "2 cups / 300g plain / all purpose flour (Note 1)",
+        "4 tsp baking powder (Note 1)",
+        "1/4 cup / 55g white sugar (caster / super fine is best but not essential)",
+        "Pinch of salt",
+        "1 egg",
+        "1 3/4 cups / 435 ml cups milk (any type, any fat %)",
+        "1 tsp vanilla extract or essence",
+        "4 tsp butter , for cooking"
+      ],
+      "instructions": [
+        "Place flour, baking powder, sugar and salt in a bowl, whisk to combine.",
+        "Add egg, milk and vanilla. Whisk until lump free - no longer than 30 seconds.",
+        "Heat a non stick skillet - use medium heat if you have a strong stove, medium high if you have a weak one. Add a tiny bit of butter (about 1/2 tsp) and swirl to melt. Use paper towel to mostly wipe the butter off (this is the trick to avoid a dodgy 1st pancake).",
+        "Pour 1/4 cup batter into the middle of the fry pan (I use a slightly heaped ice cream scoop with lever, standard is 1/4 cup).",
+        "Swirl pan lightly to spread or use the ice cream scoop edge to spread into 11cm / 4.5\" circle (ruler is a must) (joking!).",
+        "When bubbles rise to the surface (see video), flip and cook the other side until golden.",
+        "Remove and keep warm in a low oven.",
+        "Use more butter every 2 to 3 pancakes - depends how good your non stick coating is.",
+        "Serve with toppings of choice!"
+      ],
+      "nutrition": {
+        "Serving": "62g",
+        "Calories": "108cal (5%)"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Homemade Pork Sausage Patties",
+      "image": "https://shorturl.at/CBu29",
+      "ingredients": [
+        "500g/ 1 lb pork mince (ground pork) (sub chicken, turkey)",
+        "1 tsp dried ground sage",
+        "1/2 tsp dried thyme, crushed with fingers",
+        "1 tsp onion powder (sub more garlic powder)",
+        "1/2 tsp garlic powder (sub more onion powder)",
+        "1 tsp black pepper",
+        "3/4 tsp cooking / kosher salt (or 1/2 tsp table salt)",
+        "1/2 tsp sugar (optional)"
+      ],
+      "cooking_and_serving": [
+        "2 tbsp olive oil",
+        "Ketchup for serving"
+      ],
+      "instructions": [
+        "Make patties – Place sausage pattie ingredients in a bowl and mix well with your hands. Divide into 8 and form 1 cm / 0.4\" thick patties. Make a shallow dent in the middle of the surface – this prevents the patties from doming as they cook.",
+        "Cook 4 minutes – Heat 1 tablespoon of oil in a large non-stick pan over medium-high heat. Cook half the patties for 2 minutes on each side until golden. Transfer to a paper towel-lined plate. Heat remaining oil and cook remaining patties.",
+        "Serve with ketchup! (See recipe card intro for serving ideas)"
+      ],
+      "nutrition": {
+        "calories": "199cal (10%)",
+        "carbohydrates": "1g",
+        "protein": "11g (22%)",
+        "fat": "17g (26%)",
+        "saturated_fat": "5g (31%)",
+        "polyunsaturated_fat": "2g",
+        "monounsaturated_fat": "8g",
+        "cholesterol": "45mg (15%)",
+        "sodium": "253mg (11%)",
+        "potassium": "188mg (5%)",
+        "fiber": "0.1g",
+        "sugar": "0.3g",
+        "vitamin_a": "8IU",
+        "vitamin_c": "1mg (1%)",
+        "calcium": "12mg (1%)",
+        "iron": "1mg (6%)"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Cheesy Zucchini and Pasta Slice",
+      "image": "https://shorturl.at/JgXWI",
+      "ingredients": [
+        "1 cup dried wholemeal spiral pasta",
+        "3 medium (500g) zucchini, grated",
+        "3 green onions, thinly sliced",
+        "125g sliced leg ham, sliced",
+        "1 cup pizza cheese",
+        "2 x 125g cans corn kernels, drained",
+        "3/4 cup self-raising flour",
+        "4 eggs, lightly beaten",
+        "1/3 cup vegetable oil",
+        "1/3 cup milk"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C/160°C fan-forced. Grease a 20cm x 30cm lamington pan. Line base and sides with baking paper, extending paper 2cm above edge on both sides.",
+        "Cook pasta in a large saucepan of boiling, salted water following packet directions until tender. Drain. Rinse under cold water. Drain.",
+        "Using hands, squeeze excess liquid from zucchini. Combine pasta, zucchini, onion, ham, cheese, corn and flour in a bowl. Add egg, oil and milk. Season with salt and pepper. Mix well to combine. Spread mixture into prepared pan. Bake for 25 minutes or until golden and just set. Stand for 15 minutes. Serve."
+      ],
+      "nutrition": {
+        "energy": "776 kj (185cal)",
+        "protein": "8.4g",
+        "total_fat": "10.2g",
+        "saturated_fat": "3.1g",
+        "carbohydrate_total": "14.1g",
+        "sodium": "255mg",
+        "cholesterol": "0.1g"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Spaghetti bolognese cups",
+      "image": "https://shorturl.at/kG2Y3",
+      "ingredients": [
+        "150g spaghetti",
+        "1 tbsp extra virgin olive oil",
+        "1 brown onion, finely chopped",
+        "600g beef mince",
+        "2 garlic cloves, crushed",
+        "410g can tomato purée",
+        "2 eggs, lightly beaten",
+        "1/3 cup plain flour",
+        "1 cup grated pizza cheese",
+        "1/2 cup roughly chopped fresh basil leaves",
+        "1/4 cup roughly chopped fresh flat-leaf parsley"
+      ],
+      "instructions": [
+        "Cook spaghetti following packet directions until tender.",
+        "Meanwhile, heat oil in a large frying pan over medium-high heat. Add onion and cook for 3 minutes until softened. Add mince and cook, stirring to break up lumps, for 5 to 6 minutes until browned. Add garlic and cook for 1 minute until fragrant. Add tomato purée, bring to a simmer, reduce heat to low, and simmer for 10 minutes until thickened. Remove from heat and cool for 10 minutes.",
+        "Drain spaghetti and transfer to a large bowl. Cut spaghetti into 5cm lengths and cool for 10 minutes.",
+        "Preheat oven to 180C/160C fan-forced. Grease 18 holes of two 12-hole (1/3-cup-capacity) muffin pans.",
+        "Add mince mixture to spaghetti. Add egg, flour, and half the cheese. Mix well to combine. Stir in basil and parsley, season with salt and pepper. Divide mixture evenly among muffin pans, pressing to compact. Sprinkle each cup with remaining cheese.",
+        "Bake for 20 minutes until cheese is melted and golden. Stand in pans for 5 minutes. Transfer to a wire rack to cool. Serve warm or cold, sprinkled with extra basil and parsley."
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Lamb Chops with Rosemary Gravy (loin chops, forequarter, cutlets)",
+      "image": "https://shorturl.at/vDeJK",
+      "ingredients": [
+        "750g/ 1.5lb lamb chops (loin chops, forequarter, cutlets)",
+        "1/4 cup extra virgin olive oil",
+        "3 garlic cloves, finely minced",
+        "1 tbsp rosemary leaves, finely chopped",
+        "1 tsp each salt and pepper",
+        "2 cups beef stock, low sodium",
+        "3 tbsp plain/all purpose flour",
+        "1 tbsp rosemary leaves, finely chopped",
+        "2 rosemary sprigs (optional)"
+      ],
+      "instructions": [
+        "Mix Marinade ingredients together, then pour over chops. Turn to coat and leave to marinate for at least 1 hour, preferably 3 hours or overnight.",
+        "Take lamb out of fridge 30 minutes prior to cooking to bring to room temperature.",
+        "Heat a large skillet over high heat (no oil needed).",
+        "Pick up a chop, scrape off excess bits of garlic (it burns), and let excess oil drip off. Place in skillet. Once all chops are in, turn heat down to medium high.",
+        "Cook loin chops & forequarter chops for 4 minutes on each side, or until internal temperature reaches 62°C/145°F for medium rare. Cook cutlets & thin leg steaks for 3 minutes on the first side and 2 minutes on the second side.",
+        "Remove lamb from skillet and place on a platter. Loosely cover with foil and rest for 3 minutes while you make the gravy.",
+        "Pour off all but about 3 tbsp oil from the skillet. Return skillet to medium heat.",
+        "Add flour and stir for 30 seconds.",
+        "Pour in beef stock while stirring constantly to dissolve the flour mixture. If there are lumps, use a whisk.",
+        "Add chopped rosemary and sprig. Simmer, stirring regularly, for 2 to 3 minutes until the gravy thickens."
+      ],
+      "nutrition": {
+        "calories": "299cal (15%)",
+        "carbohydrates": "7g (2%)",
+        "protein": "32g (64%)",
+        "fat": "15g (23%)",
+        "saturated_fat": "4g (25%)",
+        "cholesterol": "90mg (30%)",
+        "sodium": "622mg (27%)",
+        "potassium": "607mg (17%)",
+        "fiber": "1g (4%)",
+        "sugar": "1g (1%)",
+        "vitamin_a": "31IU (1%)",
+        "vitamin_c": "1mg (1%)",
+        "calcium": "43mg (4%)",
+        "iron": "3mg (17%)"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Asparagus and Ham Filo Pie with Salsa Verde",
+      "image": "https://shorturl.at/7ezjA",
+      "ingredients": [
+        "Olive oil cooking spray",
+        "4 sheets filo pastry",
+        "7 eggs",
+        "2/3 cup milk",
+        "100g lean leg ham, chopped",
+        "125g cherry tomatoes, halved",
+        "1 bunch asparagus, trimmed, halved crossways",
+        "30g baby spinach",
+        "1/4 cup frozen peas",
+        "1/3 cup fresh ricotta, roughly crumbled",
+        "1/3 cup fresh basil leaves, chopped",
+        "2 tbsp fresh mint leaves, chopped",
+        "2 tbsp extra virgin olive oil",
+        "1 tbsp lemon juice",
+        "1/2 small garlic clove, crushed"
+      ],
+      "instructions": [
+        "Preheat oven to 200C/180C fan-forced. Spray a 3cm-deep, 18cm x 28cm slice pan with oil.",
+        "Spray 1 filo sheet with oil. Top with another filo sheet to form 1 stack. Repeat with remaining filo to form a second stack. Spray top of 1 filo stack with oil. Top with remaining filo stack to form a cross shape. Line base and sides of prepared pan with filo, allowing pastry to overhang.",
+        "Whisk eggs and milk in a bowl until well combined. Arrange ham, tomato, asparagus, and spinach in the pan. Pour over egg mixture. Sprinkle with peas and ricotta. Scrunch overhanging filo to form an edge. Spray with oil.",
+        "Bake for 25 to 30 minutes or until just set and light golden.",
+        "Meanwhile, make Salsa Verde; combine basil, mint, oil, lemon juice, and garlic in a bowl. Season with salt and pepper.",
+        "Cut pie into pieces and drizzle with salsa. Serve."
+      ],
+      "nutrition": {
+        "energy": "1651 kj (395cal)",
+        "protein": "21.2g",
+        "total_fat": "24.6g",
+        "saturated_fat": "7.0g",
+        "carbohydrates_total": "23.0g",
+        "sugars": "7.7g",
+        "sodium": "527.4mg",
+        "cholesterol": "0.3g"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Brown Rice and Salmon Patties",
+      "image": "https://shorturl.at/DgFtJ",
+      "ingredients": [
+        "1/2 cup medium grain brown rice",
+        "2 1/2 tbsp olive oil",
+        "3 spring onions, trimmed, finely chopped",
+        "2 garlic cloves, crushed",
+        "415g can red salmon, drained, skin and bones removed, flaked",
+        "2 tbsp finely chopped fresh coriander leaves",
+        "1/2 cup low-fat grated cheddar",
+        "125g green beans, thinly sliced",
+        "2 tbsp wholemeal plain flour",
+        "1 egg, lightly beaten",
+        "1 tbsp kecap manis",
+        "1/2 cup plain low-fat Greek-style yoghurt",
+        "1 tbsp sweet chilli sauce",
+        "2 celery stalks, cut into sticks",
+        "250g cherry tomatoes",
+        "2 carrots, cut into sticks",
+        "100g trimmed snow peas"
+      ],
+      "instructions": [
+        "Cook rice following packet directions. Drain. Transfer to a large heatproof bowl.",
+        "Heat 2 teaspoons oil in a small non-stick frying pan over medium heat. Add onion and garlic. Cook, stirring, for 2 minutes or until onion has softened. Transfer onion mixture to rice. Cool completely.",
+        "Add salmon, coriander, cheese, beans, flour, egg and kecap manis. Season with pepper. Mix well. Using 2 level tablespoons of mixture at a time, shape into patties. Place on a large baking tray lined with baking paper. Refrigerate for 30 minutes or until firm.",
+        "Make Dipping sauce: Combine yoghurt and sweet chilli sauce in a small bowl. Cover. Refrigerate.",
+        "Heat remaining oil in a large non-stick frying pan over medium heat. Cook patties, in batches, for 2 minutes each side or until golden.",
+        "Serve with celery stalks, cherry tomatoes, carrot sticks and snow peas. Serve patties with vegetables and dipping sauce."
+      ],
+      "nutrition": {
+        "energy": "1915 kj (458cal)",
+        "protein": "29.3g",
+        "total_fat": "20.4g",
+        "saturated_fat": "4.1g",
+        "carbohydrates_total": "39.5g",
+        "sugars": "10.9g",
+        "sodium": "787.6mg"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Best-Ever Homemade Sausage Rolls",
+      "image": "https://shorturl.at/cahdL",
+      "ingredients": [
+        "1 cup dried wholemeal spiral pasta",
+        "3 medium (500g) zucchini, grated",
+        "3 green onions, thinly sliced",
+        "125g sliced leg ham, sliced",
+        "1 cup pizza cheese",
+        "2 x 125g cans corn kernels, drained",
+        "3/4 cup self-raising flour",
+        "4 eggs, lightly beaten",
+        "1/3 cup vegetable oil",
+        "1/3 cup milk"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C/160°C fan-forced. Grease a 20cm x 30cm lamington pan. Line base and sides with baking paper, extending paper 2cm above edge on both sides.",
+        "Cook pasta in a large saucepan of boiling, salted water following packet directions until tender. Drain. Rinse under cold water. Drain.",
+        "Using hands, squeeze excess liquid from zucchini. Combine pasta, zucchini, onion, ham, cheese, corn and flour in a bowl. Add egg, oil and milk. Season with salt and pepper. Mix well to combine. Spread mixture into prepared pan. Bake for 25 minutes or until golden and just set. Stand for 15 minutes. Serve."
+      ],
+      "nutrition": [
+        "500g lean beef mince",
+        "100g chopped onion, cooked and cooled (use raw if you are short on time)",
+        "1 cup grated carrot (100g)",
+        "1 cup grated zucchini, excess moisture removed (150g)",
+        "3 tbsp tomato sauce",
+        "80g low fat cheese, grated",
+        "10 sheets filo pastry",
+        "canola spray (or olive oil spray)"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "italian lamb stew",
+      "image": "https://shorturl.at/qKy07",
+      "ingredients": [
+        "1/4 cup (35g) plain flour",
+        "1 tsp smoked paprika",
+        "600g Coles Australian Diced Lamb",
+        "2 tbsp olive oil",
+        "6 shallots, halved",
+        "1 tsp MasterFoods Finely Crushed Garlic",
+        "1 tsp MasterFoods Thyme Leaves",
+        "1 tsp MasterFoods Rosemary Leaves",
+        "2 tbsp tomato paste",
+        "1 1/2 cups (375ml) beef stock",
+        "1 large zucchini, coarsely chopped",
+        "200g Perino tomatoes",
+        "2 1/2 cups (625ml) milk",
+        "1 cup (170g) polenta"
+      ],
+      "instructions": [
+        "Step 1: Combine the flour and paprika in a bowl. Add lamb and toss to coat. Shake off excess. Heat two-thirds of the oil in a large saucepan over medium-high heat. Cook lamb, in 2 batches, for 3-4 mins or until browned. Transfer to a plate.",
+        "Step 2: Heat remaining oil in pan over medium heat. Cook shallot, stirring, for 5 mins or until shallot softens. Add MasterFoods Finely Crushed Garlic, Thyme Leaves and Rosemary Leaves. Cook, stirring, for 30 secs or until fragrant.",
+        "Step 3: Add the tomato paste and stock to the shallot mixture and bring to the boil. Return the lamb to the pan. Reduce heat to low. Cover and simmer for 45 mins. Add the zucchini and tomatoes. Simmer, partially covered, for 30 mins or until lamb is tender.",
+        "Step 4: Meanwhile, bring the milk and 2 cups (500ml) water to the boil in a medium saucepan over medium-high heat. Gradually stir in the polenta. Reduce heat to low. Simmer, stirring, for 8-10 mins or until polenta thickens. Season.",
+        "Step 5: Using a potato masher, lightly crush half the tomatoes in the lamb stew. Serve with the polenta."
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Braised Beef Short Ribs",
+      "image": "https://shorturl.at/qkKdA",
+      "ingredients": [
+        "750g/1.5lb lamb chops (loin chops, forequarter, cutlets)",
+        "1/4 cup extra virgin olive oil",
+        "3 garlic cloves, finely minced",
+        "1 tbsp rosemary leaves, finely chopped",
+        "1 tsp each salt and pepper",
+        "2 cups beef stock, low sodium",
+        "3 tbsp flour",
+        "1 tbsp rosemary leaves, finely chopped",
+        "2 rosemary sprigs"
+      ],
+      "instructions": [
+        "Mix Marinade ingredients and marinate lamb for at least 1 hour.",
+        "Heat a large skillet over high heat. Cook lamb chops 4 minutes per side for medium rare. Remove from skillet and rest.",
+        "For the gravy, add flour to the skillet and cook for 30 seconds. Gradually add beef stock, stirring until thickened. Add rosemary and simmer."
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Classic Chewy Browni",
+      "image": "http://surl.li/xfvvpc",
+      "ingredients": [
+        "125g Coles Organic Unsalted Butter, chopped",
+        "125g CADBURY Baking Dark Chocolate, chopped",
+        "3 eggs, lightly whisked",
+        "335g (1 1/2 cups) white sugar",
+        "115g (3/4 cup) plain flour",
+        "30g (1/4 cup) Dutch cocoa powder",
+        "1 tsp vanilla extract",
+        "Pinch of salt"
+      ],
+      "instructions": [
+        "Step 1: Preheat oven to 180C/160C fan forced. Grease a 20cm (base measurement) square cake pan and line with baking paper.",
+        "Step 2: Place butter and chocolate in a heatproof bowl over a saucepan of simmering water (don't let the bowl touch the water). Stir with a metal spoon until melted. Remove from heat.",
+        "Step 3: Quickly stir in egg, sugar, flour, cocoa powder, vanilla, and salt until just combined.",
+        "Step 4: Pour into prepared pan. Bake for 30 minutes or until a skewer inserted in the center comes out with moist crumbs clinging. Set aside to cool completely."
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Easy Banana Cake",
+      "image": "http://surl.li/gwqmzs",
+      "ingredients": [
+        "1 cup self-raising flour",
+        "1 cup caster sugar",
+        "50g butter, melted",
+        "1 egg, lightly beaten",
+        "1 tsp vanilla essence",
+        "1/4 cup (60ml) milk",
+        "1/2 cup mashed banana"
+      ],
+      "instructions": [
+        "Step 1: Preheat oven to 180C/160C fan-forced. Spray a 7cm-deep, 10 x 20cm (base measurement) loaf pan with oil. Line base and sides with baking paper, extending 3cm above rim.",
+        "Step 2: Sift flour into a large bowl. Stir in sugar. Make a well in the centre. Add butter, egg, vanilla, milk, and banana. Stir until just combined.",
+        "Step 3: Pour into prepared pan. Bake for 30-35 minutes or until a skewer inserted into the center comes out clean. Set aside in pan for 10 minutes to cool slightly. Serve warm or transfer to wire rack to cool completely."
+      ],
+      "nutrition": {
+        "Energy": "795 kj (190cal)",
+        "Protein": "2.4g",
+        "Total Fat": "4.8g",
+        "Saturated Fat": "2.8g",
+        "Carbohydrate Total": "35.0g",
+        "Sugars": "22.9g",
+        "Dietary Fiber": "0.6g",
+        "Sodium": "188.4mg",
+        "Calcium": "62.5mg",
+        "Magnesium": "6.6mg",
+        "Potassium": "67.1mg",
+        "Iron": "1mg",
+        "Phosphorus": "107.3mg",
+        "Vitamin A": "48.3μg",
+        "Vitamin C": "1mg",
+        "Niacin B3": "1mg",
+        "Folic Acid B9": "50μg",
+        "Vitamin B12": "0.1μg",
+        "Vitamin D": "0.2μg",
+        "Vitamin K": "0.5μg"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Sticky Date Pudding",
+      "image": "https://shorturl.at/HBeQh",
+      "ingredients": [
+        "280g / 9 oz pitted dates, roughly chopped",
+        "1 tsp baking soda / bi carb soda",
+        "1 cup boiling water",
+        "1/4 cup brown sugar, loosely packed",
+        "80g / 6 tbsp unsalted butter, softened",
+        "2 eggs, at room temperature",
+        "1 1/4 cups plain flour (all purpose flour)",
+        "1 1/2 tsp baking powder"
+      ],
+      "butterscotch_sauce": [
+        "1 cup brown sugar, tightly packed",
+        "1 1/2 cups thickened cream (heavy cream)",
+        "1/2 tsp vanilla extract",
+        "70g / 5 tbsp unsalted butter"
+      ],
+      "serving": [
+        "Ice cream or dolloping cream"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C/350°F (160°C fan-forced).",
+        "Grease 7 pudding moulds or grease and line a 20 cm / 8\" square cake pan with overhang.",
+        "Place dates in a bowl, sprinkle over baking soda. Pour over boiling water. Stand 10 minutes, then mash well until it resembles sloppy porridge.",
+        "Place butter and sugar in a bowl. Beat until combined and smooth. Add eggs and beat until incorporated.",
+        "Add flour, sprinkle baking powder across the surface, and mix until incorporated. Add dates and mix quickly until well incorporated.",
+        "For one pudding: Pour into cake pan, smooth surface. Bake 35 minutes or until skewer inserted into the center comes out clean. While still hot, poke 40 holes in the surface and pour over 1/2 cup Butterscotch Sauce. Leave to soak for 10 minutes. Cut and serve with remaining sauce and ice cream.",
+        "For individual puddings: Pour batter into pudding moulds, filling 2/3 of the way up. Bake for 25 minutes or until skewer comes out clean. While still hot, poke 10 holes on each pudding, spoon over 1 tbsp Butterscotch Sauce per pudding, and leave to soak for 10 minutes. Serve warm with remaining sauce and ice cream.",
+        "For the Butterscotch Sauce: Place ingredients in a saucepan over medium heat. Stir until butter is melted, bring to a simmer for 2 minutes, stirring occasionally, then remove from heat. Serve warm."
+      ],
+      "nutrition": {
+        "Calories per serving": "703 calories (with full sauce)",
+        "Calories with reduced sauce": "606 calories",
+        "Calories with less sweet sauce": "477 calories"
+      }
+    },
+    {
+      "id": "15",
+      "name": "Chicken Cacciatore (Italian chicken stew)",
+      "ingredients": "4 bone in chicken thighs large (1 kg / 2 lb) ▢4 chicken drumsticks ▢1/2 tsp cooking salt / kosher salt ▢1/4 tsp black pepper ▢1 tbsp olive oil Cacciatore: ▢1 onion , halved, finely sliced ▢2 rosemary sprigs (about 15 cm/6″ long), or 1 tsp dried rosemary ▢2 bay leaves , preferably fresh else dried ▢3 garlic cloves , finely minced ▢3 anchovy fillets (or 1 tsp anchovy paste), optional (Note 2) ▢250g / 8 oz mushrooms , sliced ▢2 red capsicum , sliced 8 mm thick (medium, not giant) ▢1/3 cup tomato paste ▢3/4 cup pinot noir or other dry red wine (Note 3) ▢2 cups chicken stock/broth , low sodium ▢400g/14 oz canned crushed tomato ▢16 whole kalamata olives , pitted, drained ▢1/4 tsp cooking/kosher salt ▢1/4 tsp black pepper ▢1 tsp dried oregano",
+      "instructions": "Season – Spread the chicken out on a tray. Sprinkle both sides with the salt and pepper.\nBrown skin – Heat the oil over high heat in a large, deep, heavy based pan, preferably one with a lid (Note 4). Place the chicken thighs in the pan, skin side down, and cook until the skin is golden brown, around 6 minutes. Turn and cook the flesh side for just 1 minute, then remove the chicken onto the same tray. Then add the drumsticks and brown each side as best you can, about 1 1/2 minutes on each side (the shape makes it awkward). Remove onto the tray.",
+      "image": "https://www.recipetineats.com/tachyon/2024/06/Chicken-Cacciatore-50813.jpg?resize=1200%2C1500&zoom=1"
+    }
+    
+  ]
+}
