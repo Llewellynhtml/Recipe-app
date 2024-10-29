@@ -21,7 +21,7 @@ function AddRecipePage({ addRecipe }) {
   const handleAddRecipe = (e) => {
     e.preventDefault();
     const newRecipeWithId = { ...newRecipe, id: Date.now() }; 
-    addRecipe(newRecipeWithId); // Ensure this function updates the recipe list
+    addRecipe(newRecipeWithId); 
     navigate('/');
   };
 
