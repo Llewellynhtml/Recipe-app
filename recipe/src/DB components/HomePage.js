@@ -18,7 +18,7 @@ function HomePage() {
         const response = {
           data: {
             recipes: [
-              // Breakfast Recipes
+              
               {
                 id: 1,
                 name: "Waffles",
@@ -37,7 +37,7 @@ function HomePage() {
                 image: "http://surl.li/rbaokm",
                 category: "Breakfast"
               },
-              // Lunch Recipes
+            
               {
                 id: 4,
                 name: "Cheesy Zucchini and Pasta Slice",
@@ -54,7 +54,7 @@ function HomePage() {
                 instructions: "1. Cook spaghetti...",
                 category: "Lunch"
               },
-              // Dinner/Supper Recipes
+              
               {
                 id: 6,
                 name: "Lamb Chops with Rosemary Gravy (loin chops, forequarter, cutlets)",
@@ -103,7 +103,7 @@ function HomePage() {
                 instructions: "1. Sear the ribs...",
                 category: "Dinner/Supper"
               },
-              // Dessert Recipes
+              
               {
                 id: 12,
                 name: "Classic Chewy Brownie",
@@ -128,7 +128,7 @@ function HomePage() {
                instructions: "1. Preheat oven...",
                category: "Desert"
               },
-              // Sunday Lunch Recipes
+              
               {
                 id: 15,
                 name: "Seven Colours Factory",
@@ -153,7 +153,7 @@ function HomePage() {
   const handleDelete = (id) => {
     const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
     setRecipes(updatedRecipes);
-    setFilteredRecipes(updatedRecipes); // Update filteredRecipes after deletion
+    setFilteredRecipes(updatedRecipes); 
   };
 
   const handleUpdateRecipe = () => {

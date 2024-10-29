@@ -84,15 +84,15 @@
   h2 {
     padding: 10px;
     text-align: center;
-    font-size: 1.2em; /* Font size for recipe name */
-    color: #333; /* Dark text color */
+    font-size: 1.2em; 
+    color: #333; 
   }
   
   .view-recipe-button {
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #5bc0de; /* Button color for recipe link */
+    background-color: #5bc0de; 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -106,8 +106,8 @@
   }
   
   p {
-    text-align: center; /* Center text for no recipes found message */
-    font-size: 1.1em; /* Slightly larger font size */
-    color: #666; /* Grey text color */
+    text-align: center; 
+    font-size: 1.1em; 
+    color: #666; 
   }
   

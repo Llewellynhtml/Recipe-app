@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './RegisterPage.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./RegisterPage.css";
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
   const navigate = useNavigate();
@@ -21,21 +21,20 @@ function RegisterPage() {
     e.preventDefault();
 
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match!');
+      alert("Passwords do not match!");
       return;
     }
 
-    
-    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-    
-    const emailExists = existingUsers.some(user => user.email === formData.email);
+    const emailExists = existingUsers.some(
+      (user) => user.email === formData.email
+    );
     if (emailExists) {
-      alert('Email already registered!');
+      alert("Email already registered!");
       return;
     }
 
-    
     const newUser = {
       firstName: formData.firstName,
       lastName: formData.lastName,
@@ -44,10 +43,9 @@ function RegisterPage() {
     };
     existingUsers.push(newUser);
 
-    localStorage.setItem('users', JSON.stringify(existingUsers));
+    localStorage.setItem("users", JSON.stringify(existingUsers));
 
-  
-    navigate('/login');
+    navigate("/login");
   };
 
   return (
@@ -97,7 +95,9 @@ function RegisterPage() {
           />
           <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="/login">Login here</a></p>
+        <p>
+          Already have an account? <a href="/login">Login here</a>
+        </p>
       </div>
     </div>
   );

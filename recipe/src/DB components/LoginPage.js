@@ -10,7 +10,6 @@ function LoginPage({ handleLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
     const user = existingUsers.find(user => user.email === email && user.password === password);
 
@@ -23,7 +22,7 @@ function LoginPage({ handleLogin }) {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -44,6 +43,7 @@ function LoginPage({ handleLogin }) {
         </label>
         <button type="submit">Login</button>
       </form>
+      <p>Don't have an account? <a href="/register">Register here</a></p>
     </div>
   );
 }
