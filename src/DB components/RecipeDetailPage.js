@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
+import './RecipeDetailPage.css'
 
 function RecipeDetailPage() {
   const { id } = useParams();
@@ -32,28 +33,32 @@ function RecipeDetailPage() {
     fetchRecipe();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <div className="loading-message">Loading...</div>;
+  if (error) return <div className="error-message">{error}</div>;
 
   return (
-    <div className="recipe-detail">
-      <h2>{recipe.name}</h2>
-      <img src={recipe.image} alt={recipe.name} className="recipe-image" />
-      <h3>Category: {recipe.category}</h3>
-      <h3>Ingredients:</h3>
-      <ul>
-        {Array.isArray(recipe.ingredients) ? (
-          recipe.ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
-          ))
-        ) : (
-          <li>No ingredients available</li>
-        )}
-      </ul>
-      <h3>Instructions:</h3>
-      <p>{recipe.instructions}</p>
-      <div>
-        <Link to={`/edit/${recipe.id}`} className="btn">Edit Recipe</Link>
+    <div className="recipe-detail-page">
+      <h2 className="recipe-title">{recipe.name}</h2>
+      <div className="recipe-image-container">
+        <img src={recipe.image} alt={recipe.name} className="recipe-detail-image" />
+      </div>
+      <div className="recipe-details">
+        <h3 className="recipe-category">Category: {recipe.category}</h3>
+        <h3 className="section-title">Ingredients:</h3>
+        <ul className="ingredients-list">
+          {Array.isArray(recipe.ingredients) ? (
+            recipe.ingredients.map((ingredient, index) => (
+              <li key={index} className="ingredient-item">{ingredient}</li>
+            ))
+          ) : (
+            <li>No ingredients available</li>
+          )}
+        </ul>
+        <h3 className="section-title">Instructions:</h3>
+        <p className="recipe-instructions">{recipe.instructions}</p>
+        <div className="edit-recipe-button">
+          <Link to={`/edit/${recipe.id}`} className="btn-edit-recipe">Edit Recipe</Link>
+        </div>
       </div>
     </div>
   );

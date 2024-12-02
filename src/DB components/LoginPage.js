@@ -1,51 +1,50 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import './signin.css';
+import './AuthPage.css';
 
-function LoginPage({ setIsLoggedIn }) {
-  const [credentials, setCredentials] = useState({
-    email: '',
-    password: '',
-  });
-
+function LoginPage({ handleLogin }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
-  const handleChange = (e) => {
-    setCredentials({ ...credentials, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    setIsLoggedIn(true);
-    navigate('/');  
+    
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const user = existingUsers.find(user => user.email === email && user.password === password);
+
+    if (user) {
+      handleLogin({ email: user.email, username: user.firstName });
+      navigate('/');  
+    } else {
+      alert('Invalid login credentials');
+    }
   };
 
   return (
-    <div className="page-container login-page">
-      <div className="form-container">
-        <h1>Login</h1>
+    <div className="auth-page-container login-container">
+      <div className="auth-form-container">
+        <h2>Login</h2>
         <form onSubmit={handleSubmit}>
+          <label>Email:</label>
           <input
             type="email"
-            name="email"
-            placeholder="Email"
-            value={credentials.email}
-            onChange={handleChange}
-            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="auth-input"
           />
+          <label>Password:</label>
           <input
             type="password"
-            name="password"
-            placeholder="Password"
-            value={credentials.password}
-            onChange={handleChange}
-            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="auth-input"
           />
-          <button type="submit">Login</button>
+          <button type="submit" className="auth-button">Login</button>
         </form>
-        <p>Don't have an account? <Link to="/register">Register here</Link></p>
+        
+        
+        <p>Don't have an account? <a href="/register" className="auth-link">Register here</a></p>
       </div>
     </div>
   );

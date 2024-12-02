@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Add this import
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
-import './signin.css';
+import { useNavigate } from 'react-router-dom';
+import './AuthPage.css';
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -12,7 +11,7 @@ function RegisterPage() {
     confirmPassword: '',
   });
 
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,19 +19,35 @@ function RegisterPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match');
-      return;  
+      alert('Passwords do not match!');
+      return;
     }
 
-  
-    navigate('/login');
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const emailExists = existingUsers.some(user => user.email === formData.email);
+    
+    if (emailExists) {
+      alert('Email already registered!');
+      return;
+    }
+
+    const newUser = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      password: formData.password,
+    };
+    existingUsers.push(newUser);
+
+    localStorage.setItem('users', JSON.stringify(existingUsers));
+    navigate('/');  
   };
 
   return (
-    <div className="page-container register-page">
-      <div className="form-container">
+    <div className="auth-page-container register-container">
+      <div className="auth-form-container">
         <h1>Register</h1>
         <form onSubmit={handleSubmit}>
           <input
@@ -41,6 +56,7 @@ function RegisterPage() {
             placeholder="First Name"
             value={formData.firstName}
             onChange={handleChange}
+            className="auth-input"
             required
           />
           <input
@@ -49,6 +65,7 @@ function RegisterPage() {
             placeholder="Last Name"
             value={formData.lastName}
             onChange={handleChange}
+            className="auth-input"
             required
           />
           <input
@@ -57,6 +74,7 @@ function RegisterPage() {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
+            className="auth-input"
             required
           />
           <input
@@ -65,6 +83,7 @@ function RegisterPage() {
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
+            className="auth-input"
             required
           />
           <input
@@ -73,13 +92,12 @@ function RegisterPage() {
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}
+            className="auth-input"
             required
           />
-          <button type="submit">Register</button>
+          <button type="submit" className="auth-button">Register</button>
         </form>
-        <p>
-          Already have an account? <Link to="/login">Login here</Link>
-        </p>
+        <p>Already have an account? <a href="/login" className="auth-link">Login here</a></p>
       </div>
     </div>
   );

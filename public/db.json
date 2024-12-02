@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Waffles",
       "image": "http://surl.li/kzxova",
       "category": "Breakfast",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Pancakes Fluffy Quick No-Fail",
       "image": "http://surl.li/fxjlbj",
       "category": "Breakfast",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Homemade Pork Sausage Patties",
       "image": "http://surl.li/rbaokm",
       "category": "Breakfast",
@@ -117,7 +117,7 @@
       }
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Cheesy Zucchini and Pasta Slice",
       "image": "http://surl.li/pwnsro",
       "category": "Lunch",
@@ -149,7 +149,7 @@
       }
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Spaghetti Bolognese Cups",
       "image": "http://surl.li/wxjbwi",
       "category": "Lunch",
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Lamb Chops with Rosemary Gravy",
       "image": "http://surl.li/qcmkmd",
       "category": "Dinner/Supper",
@@ -221,7 +221,7 @@
       }
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Asparagus and Ham Filo Pie",
       "image": "http://surl.li/pqwaxv",
       "category": "Dinner/Supper",
@@ -262,7 +262,7 @@
       }
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Brown Rice and Salmon Patties",
       "image": "http://surl.li/ivdwjm",
       "category": "Dinner/Supper",
@@ -304,7 +304,7 @@
       }
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Best-Ever Homemade Sausage Rolls",
       "image": "http://surl.li/bpyjqt",
       "category": "Dinner/Supper",
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Italian Lamb Stew",
       "image": "http://surl.li/gcrdws",
       "category": "Dinner/Supper",
@@ -366,7 +366,7 @@
       ]
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "Braised Beef Short Ribs",
       "image": "https://shorturl.at/my3oq",
       "category": "Dinner/Supper",
@@ -388,7 +388,7 @@
       ]
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "Classic Chewy Browni",
       "image": "http://surl.li/xfvvpc",
       "category": "Dinner/Supper",
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "id": "13",
+      "id": 13,
       "name": "Easy Banana Cake",
       "image": "http://surl.li/gwqmzs",
       "category": "Dinner/Supper",
@@ -452,9 +452,9 @@
       }
     },
     {
-      "id": "14",
+      "id": 14,
       "name": "Sticky Date Pudding",
-      "image": "https://shorturl.at/HBeQh",
+      "image": "https://shorturl.at/YCBrT",
       "category": "Dinner/Supper",
       "ingredients": [
         "280g / 9 oz pitted dates, roughly chopped",
@@ -492,7 +492,7 @@
       }
     },
     {
-      "id": "15",
+      "id": 15,
       "name": "Seven Colours Factory",
       "image": "http://surl.li/xvptxe",
       "ingredients": [
@@ -522,7 +522,7 @@
       "category": "Sunday Lunch"
     },
     {
-      "id": "7a13",
+      "id": 16,
       "name": "5-Ingredient Leftover Lasagna Toastie",
       "ingredients": [
         "2 tbsp garlic butter, softened",
@@ -535,11 +535,10 @@
       "image": "https://shorturl.at/zz5YP",
       "category": "Breakfast"
     },
-    
     {
-      "id": "d3ea",
+      "id": 17,
       "name": "Indulgent Bread Pudding",
-      "image": "https://shorturl.at/6TcoM",
+      "image": "https://shorturl.at/RPYkQ",
       "ingredients": [
         "8 SPAR Freshline Croissants or bread of choice",
         "2 cups SPAR Indulge Double Cream Yoghurt Mint Chocolate Flavoured, plus extra for serving",
@@ -557,7 +556,70 @@
         "6. Garnish the bread pudding with a dusting of icing sugar and fresh mixed berries. Spoon a serving into a bowl with a dollop of yoghurt and ENJOY!"
       ],
       "category": "Dessert"
+    },
+    {
+      "id": 7647,
+      "name": "Morogo",
+      "ingredients": "4 T oil 1 onion, roughly chopped 2 garlic cloves, finely chopped 400 g sweet potato leaves, thinly sliced 2 large tomatoes, diced sea salt and freshly ground black pepper, to taste",
+      "instructions": "1. Heat the oil in a pan. Fry the onion over a medium heat until soft and translucent,\nabout 5 minutes. Stir in the garlic and fry for 5 minutes.\n\n2. Add the sweet potato leaves and gently fry, stirring often. Once the greens have softened, add the tomatoes, salt and pepper. Cook until the tomatoes have softened. Serve hot.",
+      "image": "https://shorturl.at/QCVBX",
+      "category": "Dinner/Supper"
+    },
+    {
+      "id": 7648,
+      "name": "Shisanyama-style chuck with harissa cauliflower salad",
+      "ingredients": "1.2 kg Woolworths free-range shisanyama-style chuck steaks For the harissa cauliflower salad: 2 T Woolworths harissa paste 2 T olive oil 1 lime, juiced sea salt and freshly ground black pepper, to taste 700 g cauliflower florets, blanched or steamed celery leaves, a handful, roughly chopped (use leftover celery sticks if you have any) ",
+      "instructions": "1. Braai the steaks over medium coals for about 2 minutes per side.\n2. To make the harissa cauliflower salad, mix the dressing, then toss with the cauliflower and celery. Serve with the hot steaks.",
+      "image": "https://shorturl.at/NucPW",
+      "category": "Dinner/Supper"
+    },
+    {
+      "id": 7649,
+      "name": "Sweet chilli burgers",
+      "ingredients": "1 T olive oil 2 Woolworths free-range chicken burgers 2 Woolworths medium fat haloumi burgers 2 Woolworths Ultimate hamburger rolls, halved and toasted 3 T Wellington’s sweet chill sauce 1 red onion, thinly sliced 6 sweet and sour sliced gherkins Woolworths Crunchita® lettuce, for serving",
+      "instructions": "1. Heat the oil in a frying pan and cook the patties on one side for about 2 minutes.\n\n2. Turn over and add the sweet chilli sauce. Cook for a further 2–3 minutes.\n\n3. Place the patties onto the bases of the rolls and pile with the remaining ingredients. Top with the top half of the roll.",
+      "image": "https://shorturl.at/cM55I",
+      "category": ""
+    },
+    {
+      "id": 7650,
+      "name": "Smoky chimichurri steak with chilli crisp eggs",
+      "ingredients": "6 beef sirloin steaks 4 T Woolworths Wagyu beef fat 4 T olive oil 12 Woolworths free-range eggs 4 T Woolworths Asian spicy chilli crisp with fried black beans For the smoky chimichurri: 6 jalapeños 2 t cumin seeds 2 t coriander seeds 10 g fresh Italian parsley 10 g fresh coriander 10 g fresh dill 5 T extra virgin olive oil 1 red onion, chopped 2 cloves garlic 4 T red wine vinegar salt, to tast",
+      "instructions": "1. Rub the Wagyu fat all over the steaks.\n\n2. To make the chimichurri, wrap the jalapenos, cumin and coriander in foil. Place on heated racks and braai for 20 minutes.\n\n3. Place in a blender with the remaining ingredients except the salt. Blend to make a paste, then season.\n\n4. Cook the steaks for 3 minutes on each side. Allow to rest while cooking the eggs.\n\n5. Heat the oil on a heated flat-top grill, then fry the eggs. When almost cooked, add the chilli crisp and cook to your liking.\n\n6. Serve with the steaks and drizzle over the chimichurri.",
+      "image": "https://shorturl.at/Pa8oM",
+      "category": ""
+    },
+    {
+      "id": 7651,
+      "name": "Boerewors sheet-pan pizza",
+      "ingredients": "For the sheet-pan pizza: 400 g flour, plus extra for dusting 10 g instant dry yeast 40 g sugar 1 t sea salt 6 T extra virgin olive oil, plus extra for greasing 2 cups lukewarm water For the topping: 400 g Woolworths traditional boerewors, cut into 20 cm lengths 200 g streaky bacon 3 T extra virgin olive oil 100 g Woolworths iBhisto relish 180 g mozzarella, grated sea salt and freshly ground black pepper, to taste fresh basil leaves, for serving 200 g Bella tomatoes, halved, for serving",
+      "instructions": "1. To make the pizza, combine the dry ingredients in a bowl. Pinch half the olive oil into the dry mixture using your fingertips until well distributed, then gradually stir in the water, mixing it in with your fingers until a rough dough forms. Add more flour if the dough is too wet.\n\n2. Turn the dough out onto a floured surface and knead for 5–7 minutes until smooth and softened. Grease a clean bowl, shape the dough into a ball, place in the bowl, cover with a tea towel and prove for an hour.\n\n3. Once the dough has doubled in size, grease a baking sheet with olive oil, and transfer the dough to the sheet pan, pushing it into the pan with your fingers. Prove for another 30 minutes. Meanwhile, preheat the oven to 180°C.\n\n4. Wrap the boerewors pieces in the bacon. Heat the olive oil in a pan and fry the bacon-wrapped wors until golden brown and cooked through, turning once or twice. Set aside once cooked.\n\n5. Knock down the dough in the sheet pan, drizzle with the remaining olive oil, and bake for 10 minutes, or until partially cooked. Remove from the oven and spread with the relish, then top with the cheese and the fried boerewors, and season. Bake for 15 minutes or until cooked through. Remove from the oven, scatter over the basil and tomatoes. Serve immediately.",
+      "image": "https://shorturl.at/gBFwu",
+      "category": ""
+    },
+    {
+      "id": 7652,
+      "name": "Moroccan-style meatball pitas",
+      "ingredients": "2 x 450 g packets Woolworths lamb-and-beef sizzlers 1 T Woolworths Moroccan tagine seasoning 2 T oil 1⁄4 cup apricot jam 1 x 400 g can chickpeas in brine, drained 200 g Woolworths Rosa tomatoes 75 g Woolworths fresh harissa paste 6 pita breads, lightly toasted and halved 180 g hummus 1⁄4 iceberg lettuce, shaved 15 g coriander, finely chopped 200 g plain yoghurt",
+      "instructions": "1. Remove the sausage meat from the casings and mix with the Moroccan seasoning. Roll into 24 small balls and brown in 1 T oil over a medium heat until cooked through. Glaze with apricot jam in the last few minutes of cooking.\n\n2. Toss the chickpeas, tomatoes and harissa paste in the remaining oil and roast at 180°C for 15 minutes.\n\n3. Spread the inside of each pita pocket with hummus and stuff with lettuce, coriander, roasted chickpeas and tomato and meatballs. Drizzle with yoghurt and serve.\n\nCook's note: Mould the spiced lamb-and-beef filling onto wooden skewers, kebab style, and cook them on the braai. Remove the cooked meat and add to warm wraps with all the fillings to enjoy around the fire.",
+      "image": "https://shorturl.at/C7KbF",
+      "category": "Lunch"
+    },
+    {
+      "id": 7653,
+      "name": "Braised shortrib rashers",
+      "ingredients": "4 T extra virgin olive oil 1 kg shortrib rashers 4 T Woolworths steak rub 1 litre beef stock rosemary, a sprig 2 T honey potato chips, for serving",
+      "instructions": "1. Preheat the oven to 200°C. Heat the olive oil in a pan. Season the shortrib well with the steak rub and sear over a high heat until browned.\n\n2. Add the stock, rosemary and honey. Cover with foil and roast for 1½ hours, or until the meat is soft and comes away from the bone easily. Serve with the chips.",
+      "image": "https://shorturl.at/koAHc",
+      "category": "Lunch"
+    },
+    {
+      "id": 7654,
+      "name": "Easy beef stew",
+      "ingredients": "4 T canola oil sea salt and freshly ground black pepper, to taste 1 kg stewing beef, cut into bite-sized chunks 1 onion, roughly chopped 1 carrot, cubed 1 stick celery, roughly chopped 2 cloves garlic 3 T tomato paste 2 T steak rub 1 t paprika 1 sprig thyme 1 sprig rosemary 1 bay leaf 2 large potatoes, peeled and cubed cooked basmati rice, for serving",
+      "instructions": "1. Heat the oil in a large saucepan. Season the beef and brown in batches. Set aside.\n\n2. In the same pan, sauté the onion, carrots and celery for 5 minutes or until the onions are translucent.\n3. Return the meat to the pan.\n\n4. Stir in the garlic, tomato paste, steak rub and paprika. Add the herbs and cover with 4 cups water. Stir, cover and reduce the heat to medium. Simmer for 40–45 minutes, stirring occasionally. Add 1–2 additional cups of water if necessary. Add the potatoes and remove the lid and simmer for 20 minutes, allowing the sauce to reduce a bit and the potatoes to soften.\n\n5. Stir once more, check the seasoning and serve hot with the cooked rice.",
+      "image": "https://shorturl.at/USur0",
+      "category": "Sunday Lunch"
     }
-    
   ]
 }
