@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './signin.css';
 
-function LoginPage() {
+function LoginPage({ setIsLoggedIn }) {
   const [credentials, setCredentials] = useState({
     email: '',
     password: '',
   });
-  
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -15,9 +17,9 @@ function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic, e.g., API call for login
-    // Assuming login is successful
-    navigate('/');
+  
+    setIsLoggedIn(true);
+    navigate('/');  
   };
 
   return (
@@ -43,7 +45,7 @@ function LoginPage() {
           />
           <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="/register">Register here</a></p>
+        <p>Don't have an account? <Link to="/register">Register here</Link></p>
       </div>
     </div>
   );

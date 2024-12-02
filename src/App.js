@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
 import RecipeDetailPage from './DB components/RecipeDetailPage';
 import AddRecipePage from './DB components/AddRecipePage';
 import EditRecipe from './DB components/EditRecipe';
@@ -8,27 +8,35 @@ import RegisterPage from './DB components/RegisterPage';
 import LoginPage from './DB components/LoginPage';
 import UserProfilePage from './DB components/UserProfilePage';
 import EditProfilePage from './DB components/EditProfilePage';
-import kitchen from './kitchen.logo.svg.png.png';
 import './App.css';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
   const [user, setUser] = useState({
     username: 'Lesego',
     email: 'Llewellyn.ml.info@gmail.com',
   });
 
+  const navigate = useNavigate(); 
+
   const handleLogout = () => {
-    setIsLoggedIn(false);
-    window.location.href = '/login'; 
+    setIsLoggedIn(false); 
+    navigate('/login'); 
   };
 
   const updateUser = (updatedUser) => {
     setUser(updatedUser);
   };
 
+  
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate('/login'); 
+    }
+  }, [isLoggedIn, navigate]);
+
   return (
-    <Router>
+    <div className="app-container">
       <nav className="navbar">
         <Link to="/">Home</Link>
         {isLoggedIn ? (
@@ -44,20 +52,23 @@ function App() {
           </>
         )}
       </nav>
-      <div className="app-container">
-        <img src={kitchen} className="kitchen" alt="Kitchen Logo" />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/add" element={<AddRecipePage />} />
-          <Route path="/edit/:id" element={<EditRecipe />} />
-          <Route path="/recipes/:id" element={<RecipeDetailPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/profile" element={<UserProfilePage user={user} />} />
-          <Route path="/edit-profile" element={<EditProfilePage user={user} updateUser={updateUser} />} />
-        </Routes>
-      </div>
-    </Router>
+      <Routes>
+        
+        <Route path="/" element={isLoggedIn ? <HomePage /> : <Navigate to="/login" />} />
+        <Route path="/add" element={isLoggedIn ? <AddRecipePage /> : <Navigate to="/login" />} />
+        <Route path="/edit/:id" element={isLoggedIn ? <EditRecipe /> : <Navigate to="/login" />} />
+        <Route path="/recipes/:id" element={<RecipeDetailPage />} />
+
+      
+        <Route path="/register" element={isLoggedIn ? <Navigate to="/" /> : <RegisterPage />} />
+        
+        
+        <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <LoginPage setIsLoggedIn={setIsLoggedIn} />} />
+
+        <Route path="/profile" element={isLoggedIn ? <UserProfilePage user={user} /> : <Navigate to="/login" />} />
+        <Route path="/edit-profile" element={isLoggedIn ? <EditProfilePage user={user} updateUser={updateUser} /> : <Navigate to="/login" />} />
+      </Routes>
+    </div>
   );
 }
 

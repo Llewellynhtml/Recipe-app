@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  // Add this import
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import './signin.css';
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -9,8 +11,8 @@ function RegisterPage() {
     password: '',
     confirmPassword: '',
   });
-  
-  const navigate = useNavigate();
+
+  const navigate = useNavigate();  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -18,8 +20,13 @@ function RegisterPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic, e.g., API call for registration
-    // Assuming registration is successful
+    
+    if (formData.password !== formData.confirmPassword) {
+      alert('Passwords do not match');
+      return;  
+    }
+
+  
     navigate('/login');
   };
 
@@ -70,7 +77,9 @@ function RegisterPage() {
           />
           <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="/login">Login here</a></p>
+        <p>
+          Already have an account? <Link to="/login">Login here</Link>
+        </p>
       </div>
     </div>
   );

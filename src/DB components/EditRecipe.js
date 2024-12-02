@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom'; // useNavigate instead of useHistory
+import { useParams, useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
-
 
 function EditRecipe() {
   const { id } = useParams();
@@ -9,16 +8,21 @@ function EditRecipe() {
     name: '',
     ingredients: '',
     instructions: '',
-    nutrition:'',
+    nutrition: '',
+    category: ''
   });
-  const navigate = useNavigate(); // useNavigate instead of useHistory
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get('/db.json');
         const foundRecipe = response.data.recipes.find(recipe => recipe.id === parseInt(id));
-        setRecipe(foundRecipe);
+        if (foundRecipe) {
+          setRecipe(foundRecipe);
+        } else {
+          console.error('Recipe not found');
+        }
       } catch (error) {
         console.error('Error fetching recipe:', error);
       }
@@ -34,9 +38,8 @@ function EditRecipe() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Here we would normally send a PUT request to a server to update the recipe.
       console.log('Recipe updated:', recipe);
-      navigate('/'); // use navigate to redirect
+      navigate('/'); 
     } catch (error) {
       console.error('Error updating recipe:', error);
     }
@@ -75,15 +78,30 @@ function EditRecipe() {
           />
         </div>
         <div className="form-group">
-        <label>nutrition</label>
-         <textarea
-         name="nutrition"
-         value={recipe.nutrition}
-         onChange={handleChange}
-         required
-         />
+          <label>Nutrition:</label>
+          <textarea
+            name="nutrition"
+            value={recipe.nutrition}
+            onChange={handleChange}
+            required
+          />
         </div>
-        <button type="submit" className="btn">Update Recipe</button>
+        
+      
+        <select
+          name="category"
+          value={recipe.category}
+          onChange={handleChange}
+        >
+          <option value="">Select Category</option>
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner/Supper">Dinner/Supper</option>
+          <option value="Dessert">Dessert</option>
+          <option value="Sunday Lunch">Sunday Lunch</option>
+        </select>
+
+        <button type="submit">Update Recipe</button>
       </form>
     </div>
   );
