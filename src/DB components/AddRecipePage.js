@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'; 
 import './AddRecipePage.css';
 
 function AddRecipePage({ addRecipe }) {
@@ -10,11 +11,12 @@ function AddRecipePage({ addRecipe }) {
     instructions: '',
     image: '',
     category: '',
-    id: null,
+    id: null,  // Initialize as null, will be updated after fetching the max id
   });
 
   const navigate = useNavigate();
 
+  // Fetch max id when component mounts to ensure a unique id is set for new recipe
   useEffect(() => {
     const fetchMaxId = async () => {
       try {
@@ -23,9 +25,10 @@ function AddRecipePage({ addRecipe }) {
           (max, recipe) => Math.max(max, recipe.id),
           0
         );
+        // Set the id for the new recipe (maxId + 1)
         setNewRecipe((prevRecipe) => ({
           ...prevRecipe,
-          id: maxId + 1,
+          id: maxId + 1, // Increment by 1 from the highest existing id
         }));
       } catch (error) {
         console.error('Error fetching recipes:', error);
@@ -35,14 +38,18 @@ function AddRecipePage({ addRecipe }) {
     fetchMaxId();
   }, []);
 
+  // Handle input changes to update state
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewRecipe({ ...newRecipe, [name]: value });
   };
 
+  // Handle form submission to add a new recipe
   const handleAddRecipe = async (e) => {
     e.preventDefault();
+
     try {
+      // Ensure id is a number before posting the recipe
       const recipeWithValidId = { ...newRecipe, id: Number(newRecipe.id) };
 
       const response = await axios.post(
@@ -50,11 +57,37 @@ function AddRecipePage({ addRecipe }) {
         recipeWithValidId
       );
 
-      addRecipe(response.data); 
-      navigate("/");  
+      // Add the new recipe to the parent component (or update the state)
+      addRecipe(response.data);
 
+      // SweetAlert for success
+      Swal.fire({
+        title: 'Success!',
+        text: 'Recipe has been added successfully!',
+        icon: 'success',
+        confirmButtonText: 'OK',
+      }).then(() => {
+        // Redirect after adding a recipe (optional)
+        navigate('/recipes'); // Redirect to the recipes list page after success
+      });
+
+      // Reset the form state after success
+      setNewRecipe({
+        name: '',
+        ingredients: '',
+        instructions: '',
+        image: '',
+        category: '',
+        id: null,
+      });
     } catch (error) {
       console.error('There was an error adding the recipe:', error);
+      Swal.fire({
+        title: 'Error!',
+        text: 'There was an error adding your recipe. Please try again.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
     }
   };
 

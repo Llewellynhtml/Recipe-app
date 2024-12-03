@@ -12,8 +12,8 @@ function RecipeDetailPage() {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get('/db.json');
-        const foundRecipe = response.data.recipes.find(recipe => recipe.id === parseInt(id));
+        const response = await axios.get('http://localhost:3006/recipes');
+        const foundRecipe = response.data.find(recipe => recipe.id === Number(id)); // Ensure id is treated as a number
         if (foundRecipe) {
           if (typeof foundRecipe.ingredients === 'string') {
             foundRecipe.ingredients = foundRecipe.ingredients.split(' ▢');

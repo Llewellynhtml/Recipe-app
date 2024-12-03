@@ -14,20 +14,29 @@ function HomePage() {
       try {
         const response = await axios.get('http://localhost:3006/recipes');
         console.log('Fetched Recipes:', response.data);
-        setRecipes(response.data);
-        setFilteredRecipes(response.data);
+  
+        setRecipes(response.data);  // Set the recipes as-is
+        setFilteredRecipes(response.data);  // Set filtered recipes as-is
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
     };
-
+  
     fetchData();
   }, []);
-
-  const handleDelete = (id) => {
-    const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
-    setRecipes(updatedRecipes);
-    setFilteredRecipes(updatedRecipes);
+  
+  const handleDelete = async (id) => {
+    try {
+      // Delete the recipe from the database
+      await axios.delete(`http://localhost:3006/recipes/${id}`);
+      
+      // Update the local state after successful deletion
+      const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
+      setRecipes(updatedRecipes);
+      setFilteredRecipes(updatedRecipes);
+    } catch (error) {
+      console.error('Error deleting recipe:', error);
+    }
   };
 
   const handleSearch = () => {
@@ -69,10 +78,14 @@ function HomePage() {
           <p className="no-recipes-message">No recipes found</p>
         ) : (
           filteredRecipes.map((recipe) => (
-            <div key={recipe.id} className="recipe-card">
+            <div key={String(recipe.id)} className="recipe-card">
               <img src={recipe.image} alt={recipe.name} className="recipe-card-image" />
               <h3 className="recipe-title">{recipe.name}</h3>
-              <div><Link to={`/recipes/${recipe.id}`} className="view-recipe-btn">Display Recipe</Link></div>
+              <div>
+                <Link to={`/recipes/${String(recipe.id)}`} className="view-recipe-btn">
+                  Display Recipe
+                </Link>
+              </div>
               <button className="delete-recipe-btn" onClick={() => handleDelete(recipe.id)}>Delete</button>
             </div>
           ))

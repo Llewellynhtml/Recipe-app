@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'; 
 import './AuthPage.css';
 
 function RegisterPage() {
@@ -21,7 +22,12 @@ function RegisterPage() {
     e.preventDefault();
 
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match!');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Passwords do not match!',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
       return;
     }
 
@@ -29,7 +35,12 @@ function RegisterPage() {
     const emailExists = existingUsers.some(user => user.email === formData.email);
     
     if (emailExists) {
-      alert('Email already registered!');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Email already registered!',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
       return;
     }
 
@@ -42,7 +53,15 @@ function RegisterPage() {
     existingUsers.push(newUser);
 
     localStorage.setItem('users', JSON.stringify(existingUsers));
-    navigate('/');  
+    
+    Swal.fire({
+      title: 'Success!',
+      text: 'Registration successful!',
+      icon: 'success',
+      confirmButtonText: 'OK',
+    }).then(() => {
+      navigate('/');  
+    });
   };
 
   return (

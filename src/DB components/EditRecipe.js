@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; 
 import axios from 'axios';
-import './EditRecipe.css'
+import Swal from 'sweetalert2'; 
+import './EditRecipe.css';
 
 function EditRecipe() {
   const { id } = useParams();
@@ -17,7 +18,7 @@ function EditRecipe() {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
-        const response = await axios.get('/db.json');
+        const response = await axios.get('/db.json'); 
         const foundRecipe = response.data.recipes.find(recipe => recipe.id === parseInt(id));
         if (foundRecipe) {
           setRecipe(foundRecipe);
@@ -39,10 +40,30 @@ function EditRecipe() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+ 
+
+    
       console.log('Recipe updated:', recipe);
-      navigate('/'); 
+
+      
+      Swal.fire({
+        title: 'Success!',
+        text: 'Recipe has been updated successfully!',
+        icon: 'success',
+        confirmButtonText: 'OK',
+      }).then(() => {
+        navigate('/'); 
+      });
+
     } catch (error) {
+      
       console.error('Error updating recipe:', error);
+      Swal.fire({
+        title: 'Error!',
+        text: 'There was an error updating your recipe. Please try again.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
     }
   };
 
@@ -88,19 +109,21 @@ function EditRecipe() {
           />
         </div>
         
-      
-        <select
-          name="category"
-          value={recipe.category}
-          onChange={handleChange}
-        >
-          <option value="">Select Category</option>
-          <option value="Breakfast">Breakfast</option>
-          <option value="Lunch">Lunch</option>
-          <option value="Dinner/Supper">Dinner/Supper</option>
-          <option value="Dessert">Dessert</option>
-          <option value="Sunday Lunch">Sunday Lunch</option>
-        </select>
+        <div className="form-group">
+          <label>Category:</label>
+          <select
+            name="category"
+            value={recipe.category}
+            onChange={handleChange}
+          >
+            <option value="">Select Category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner/Supper">Dinner/Supper</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Sunday Lunch">Sunday Lunch</option>
+          </select>
+        </div>
 
         <button type="submit">Update Recipe</button>
       </form>

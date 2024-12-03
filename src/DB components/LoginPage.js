@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'; 
 import './AuthPage.css';
 
 function LoginPage({ handleLogin }) {
@@ -17,7 +18,12 @@ function LoginPage({ handleLogin }) {
       handleLogin({ email: user.email, username: user.firstName });
       navigate('/');  
     } else {
-      alert('Invalid login credentials');
+      Swal.fire({
+        title: 'Error!',
+        text: 'Invalid login credentials',
+        icon: 'error',
+        confirmButtonText: 'OK',
+      });
     }
   };
 
@@ -32,6 +38,7 @@ function LoginPage({ handleLogin }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="auth-input"
+            required
           />
           <label>Password:</label>
           <input
@@ -39,11 +46,11 @@ function LoginPage({ handleLogin }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="auth-input"
+            required
           />
           <button type="submit" className="auth-button">Login</button>
         </form>
-        
-        
+
         <p>Don't have an account? <a href="/register" className="auth-link">Register here</a></p>
       </div>
     </div>
