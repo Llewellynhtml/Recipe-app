@@ -15,8 +15,8 @@ function HomePage() {
         const response = await axios.get('http://localhost:3006/recipes');
         console.log('Fetched Recipes:', response.data);
   
-        setRecipes(response.data);  // Set the recipes as-is
-        setFilteredRecipes(response.data);  // Set filtered recipes as-is
+        setRecipes(response.data);  
+        setFilteredRecipes(response.data);  
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
@@ -27,10 +27,10 @@ function HomePage() {
   
   const handleDelete = async (id) => {
     try {
-      // Delete the recipe from the database
+      
       await axios.delete(`http://localhost:3006/recipes/${id}`);
       
-      // Update the local state after successful deletion
+      
       const updatedRecipes = recipes.filter(recipe => recipe.id !== id);
       setRecipes(updatedRecipes);
       setFilteredRecipes(updatedRecipes);

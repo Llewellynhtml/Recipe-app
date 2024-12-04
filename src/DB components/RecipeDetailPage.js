@@ -13,7 +13,7 @@ function RecipeDetailPage() {
     const fetchRecipe = async () => {
       try {
         const response = await axios.get('http://localhost:3006/recipes');
-        const foundRecipe = response.data.find(recipe => recipe.id === Number(id)); // Ensure id is treated as a number
+        const foundRecipe = response.data.find(recipe => recipe.id === Number(id)); 
         if (foundRecipe) {
           if (typeof foundRecipe.ingredients === 'string') {
             foundRecipe.ingredients = foundRecipe.ingredients.split(' ▢');
